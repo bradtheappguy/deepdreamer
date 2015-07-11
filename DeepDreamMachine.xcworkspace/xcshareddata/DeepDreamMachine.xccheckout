@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>542D03FB-0CE1-402C-A2BD-46220B62F91E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DeepDreamMachine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A32E5F4C50489A4D6333DB97460F4478C651C44</key>
+		<string>github.com:bradtheappguy/deepdreammachine.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DeepDreamMachine.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A32E5F4C50489A4D6333DB97460F4478C651C44</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bradtheappguy/deepdreammachine.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A32E5F4C50489A4D6333DB97460F4478C651C44</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A32E5F4C50489A4D6333DB97460F4478C651C44</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DeepDream-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
