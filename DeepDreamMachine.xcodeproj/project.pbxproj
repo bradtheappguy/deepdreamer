@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A010A2D1B51C0C200C88CB6 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A010A2C1B51C0C200C88CB6 /* PhotosUI.framework */; };
+		6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A010A2E1B51C0C200C88CB6 /* Photos.framework */; };
+		6A010A341B51C0C200C88CB6 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */; };
+		6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */; };
+		6A010A391B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A010A3F1B51C0E900C88CB6 /* ParameterSelectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */; };
 		A205069619380DA900D305CA /* attributes.json in Resources */ = {isa = PBXBuildFile; fileRef = A205069519380DA900D305CA /* attributes.json */; };
 		A205069A19380E2B00D305CA /* IMPaintingsAttributesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */; };
 		A205069B19380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A205069919380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib */; };
@@ -231,8 +237,39 @@
 		D3F19C5D19033C7800FD5551 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F19C5C19033C7800FD5551 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A010A371B51C0C200C88CB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D35068C318F779520058BDA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A010A2A1B51C0C200C88CB6;
+			remoteInfo = DeepDreamMachinePhotosExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A010A3D1B51C0C200C88CB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A010A391B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14D9D6B135B145A0B8EC6485 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeepDreamMachinePhotosExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A010A2C1B51C0C200C88CB6 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		6A010A2E1B51C0C200C88CB6 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		6A010A321B51C0C200C88CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterSelectionObject.swift; sourceTree = "<group>"; };
 		A205069519380DA900D305CA /* attributes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = attributes.json; sourceTree = "<group>"; };
 		A205069719380E2B00D305CA /* IMPaintingsAttributesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPaintingsAttributesTableViewController.h; sourceTree = "<group>"; };
 		A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPaintingsAttributesTableViewController.m; sourceTree = "<group>"; };
@@ -554,6 +591,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A010A281B51C0C200C88CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A010A2D1B51C0C200C88CB6 /* PhotosUI.framework in Frameworks */,
+				6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D35068C818F779520058BDA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,6 +634,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A010A301B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */,
+				6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */,
+				6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */,
+				6A010A311B51C0C200C88CB6 /* Supporting Files */,
+			);
+			path = DeepDreamMachinePhotosExtension;
+			sourceTree = "<group>";
+		};
+		6A010A311B51C0C200C88CB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A010A321B51C0C200C88CB6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A28B21A11963BACF005323D8 /* sequences */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,6 +913,7 @@
 				A2E16513191CA3A2003D59A7 /* generated */,
 				D3A13DEC1909CCE10060FA88 /* lib */,
 				D35068D418F779520058BDA9 /* Impressionism */,
+				6A010A301B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */,
 				D35068CD18F779520058BDA9 /* Frameworks */,
 				D35068CC18F779520058BDA9 /* Products */,
 				D96CBD8FB8394237B4AAC925 /* Pods.xcconfig */,
@@ -858,6 +924,7 @@
 			isa = PBXGroup;
 			children = (
 				D35068CB18F779520058BDA9 /* DeepDreamMachine.app */,
+				6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -890,6 +957,8 @@
 				D3E449B01908E42700215C80 /* MessageUI.framework */,
 				D35068D218F779520058BDA9 /* UIKit.framework */,
 				D35068E718F779520058BDA9 /* XCTest.framework */,
+				6A010A2C1B51C0C200C88CB6 /* PhotosUI.framework */,
+				6A010A2E1B51C0C200C88CB6 /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1110,6 +1179,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A010A2A1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A010A3A1B51C0C200C88CB6 /* Build configuration list for PBXNativeTarget "DeepDreamMachinePhotosExtension" */;
+			buildPhases = (
+				6A010A271B51C0C200C88CB6 /* Sources */,
+				6A010A281B51C0C200C88CB6 /* Frameworks */,
+				6A010A291B51C0C200C88CB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepDreamMachinePhotosExtension;
+			productName = DeepDreamMachinePhotosExtension;
+			productReference = 6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D35068CA18F779520058BDA9 /* DeepDreamMachine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D35068F718F779520058BDA9 /* Build configuration list for PBXNativeTarget "DeepDreamMachine" */;
@@ -1119,10 +1205,12 @@
 				D35068C818F779520058BDA9 /* Frameworks */,
 				D35068C918F779520058BDA9 /* Resources */,
 				3B5F7CAB04A247499F57D639 /* Copy Pods Resources */,
+				6A010A3D1B51C0C200C88CB6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A010A381B51C0C200C88CB6 /* PBXTargetDependency */,
 			);
 			name = DeepDreamMachine;
 			productName = Impressionism;
@@ -1139,8 +1227,12 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Jet;
 				TargetAttributes = {
+					6A010A2A1B51C0C200C88CB6 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = GT4UPLQPY7;
+					};
 					D35068CA18F779520058BDA9 = {
-						DevelopmentTeam = 399TA5Z29Z;
+						DevelopmentTeam = GT4UPLQPY7;
 					};
 				};
 			};
@@ -1157,11 +1249,20 @@
 			projectRoot = "";
 			targets = (
 				D35068CA18F779520058BDA9 /* DeepDreamMachine */,
+				6A010A2A1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A010A291B51C0C200C88CB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D35068C918F779520058BDA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1313,6 +1414,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A010A271B51C0C200C88CB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A010A341B51C0C200C88CB6 /* PhotoEditingViewController.swift in Sources */,
+				6A010A3F1B51C0E900C88CB6 /* ParameterSelectionObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D35068C718F779520058BDA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1412,6 +1522,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6A010A381B51C0C200C88CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A010A2A1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */;
+			targetProxy = 6A010A371B51C0C200C88CB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		D35068D718F779520058BDA9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -1432,6 +1550,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A010A3B1B51C0C200C88CB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A010A3C1B51C0C200C88CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D35068F518F779520058BDA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1586,6 +1750,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A010A3A1B51C0C200C88CB6 /* Build configuration list for PBXNativeTarget "DeepDreamMachinePhotosExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A010A3B1B51C0C200C88CB6 /* Debug */,
+				6A010A3C1B51C0C200C88CB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D35068C618F779520058BDA9 /* Build configuration list for PBXProject "DeepDreamMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
