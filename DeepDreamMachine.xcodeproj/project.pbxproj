@@ -1133,6 +1133,11 @@
 				CLASSPREFIX = AG;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Jet;
+				TargetAttributes = {
+					D35068CA18F779520058BDA9 = {
+						DevelopmentTeam = 399TA5Z29Z;
+					};
+				};
 			};
 			buildConfigurationList = D35068C618F779520058BDA9 /* Build configuration list for PBXProject "DeepDreamMachine" */;
 			compatibilityVersion = "Xcode 3.2";
