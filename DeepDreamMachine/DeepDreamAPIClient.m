@@ -30,7 +30,7 @@
 }
 
 - (void)MOCKRESPONSE:(void (^)(UIImage *image))completion {
-  UIImage *imageToReturn = [UIImage imageNamed:@"skyline2"];
+  UIImage *imageToReturn = [UIImage imageNamed:@"output2"];
   completion(imageToReturn);
 }
 

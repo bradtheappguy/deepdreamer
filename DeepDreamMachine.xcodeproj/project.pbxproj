@@ -37,6 +37,10 @@
 		A271D9EC1B51A5C000A1CC1A /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9E01B51A5C000A1CC1A /* pencil.png */; };
 		A271D9ED1B51A5C000A1CC1A /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9E11B51A5C000A1CC1A /* pencil@2x.png */; };
 		A271D9F01B51C05200A1CC1A /* DeepDreamAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */; };
+		A271D9F21B51D52800A1CC1A /* output2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F11B51D52800A1CC1A /* output2.jpg */; };
+		A271D9F31B51D52800A1CC1A /* output2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F11B51D52800A1CC1A /* output2.jpg */; };
+		A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F41B51D5EF00A1CC1A /* in1.jpg */; };
+		A271D9F61B51D5EF00A1CC1A /* in1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F41B51D5EF00A1CC1A /* in1.jpg */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -301,6 +305,8 @@
 		A271D9E11B51A5C000A1CC1A /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil@2x.png"; path = "DeepDreamMachine/Images/pencil@2x.png"; sourceTree = SOURCE_ROOT; };
 		A271D9EE1B51C05200A1CC1A /* DeepDreamAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepDreamAPIClient.h; sourceTree = "<group>"; };
 		A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepDreamAPIClient.m; sourceTree = "<group>"; };
+		A271D9F11B51D52800A1CC1A /* output2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = output2.jpg; sourceTree = "<group>"; };
+		A271D9F41B51D5EF00A1CC1A /* in1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = in1.jpg; sourceTree = "<group>"; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -970,6 +976,8 @@
 				D3A13EB61909D6350060FA88 /* images */,
 				D3A13E811909D62E0060FA88 /* Source */,
 				D35068E018F779520058BDA9 /* Images.xcassets */,
+				A271D9F41B51D5EF00A1CC1A /* in1.jpg */,
+				A271D9F11B51D52800A1CC1A /* output2.jpg */,
 				D35068D518F779520058BDA9 /* Supporting Files */,
 				D3F19C5C19033C7800FD5551 /* Settings.storyboard */,
 				A271D9EE1B51C05200A1CC1A /* DeepDreamAPIClient.h */,
@@ -1229,10 +1237,7 @@
 				TargetAttributes = {
 					6A010A2A1B51C0C200C88CB6 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = GT4UPLQPY7;
-					};
-					D35068CA18F779520058BDA9 = {
-						DevelopmentTeam = GT4UPLQPY7;
+						DevelopmentTeam = 399TA5Z29Z;
 					};
 				};
 			};
@@ -1260,6 +1265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */,
+				A271D9F61B51D5EF00A1CC1A /* in1.jpg in Resources */,
+				A271D9F31B51D52800A1CC1A /* output2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,6 +1274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A271D9F21B51D52800A1CC1A /* output2.jpg in Resources */,
 				C3C7B73A194E61F900DE1466 /* Ejecta.js in Resources */,
 				C9486B5819397C5D00E495E0 /* 1.json in Resources */,
 				C9486B5919397C5D00E495E0 /* 2.json in Resources */,
@@ -1346,6 +1354,7 @@
 				A290032C192C5B0900749630 /* sample6.jpg in Resources */,
 				C3C7B741194E626500DE1466 /* 7.json in Resources */,
 				C3C7B744194E626500DE1466 /* 10.json in Resources */,
+				A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */,
 				A2900329192C5B0900749630 /* sample5_thumb@2x.jpg in Resources */,
 				A2900328192C5B0900749630 /* sample4.jpg in Resources */,
 				D33423A1190E305C005D3EE6 /* ShareFacebook-style7.png in Resources */,
@@ -1757,6 +1766,7 @@
 				6A010A3C1B51C0C200C88CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D35068C618F779520058BDA9 /* Build configuration list for PBXProject "DeepDreamMachine" */ = {
 			isa = XCConfigurationList;
