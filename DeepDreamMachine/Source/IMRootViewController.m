@@ -147,7 +147,11 @@
   [self snapDraggingPopoverToCorner];
   [self.view layoutSubviews];
   [self.view bringSubviewToFront:self.effectPickingScrollView];
-  }
+
+  self.effectPickingScrollView.contentSize =
+      CGSizeMake(self.effectPickingScrollView.superview.bounds.size.width * 2,
+                 self.effectPickingScrollView.superview.bounds.size.height);
+}
 
 - (void)popoverControllerDidDismissPopover:
     (UIPopoverController *)popoverController {
