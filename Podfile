@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+pod 'AFAmazonS3Client'
+pod 'ShipLib'
+pod 'MBProgressHUD'
+pod 'Reachability'

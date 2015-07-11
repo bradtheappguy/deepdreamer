@@ -1,0 +1,15 @@
+{
+    "name":"three",
+    "count":950,
+    "length":20,
+    "speed":1.0,
+    "life":0.1,
+    "alpha":0.2,
+    "brushImage": "brush05.png",
+    "thickness": 20,
+    "chromaThreshold": 0,
+    "chromaSensitivity": 0.01,
+    "chromaSmooth": 0.5,
+    "chromaTarget": 0,
+    "opacity": 0.75
+}

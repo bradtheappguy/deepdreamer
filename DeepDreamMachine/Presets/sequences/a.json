@@ -1,0 +1,28 @@
+{
+    "steps" : [
+               {
+               "brush" : "1.json",
+               "duration" : 2.5
+               },
+               {
+               "brush" : "2.json",
+               "duration" : 5.5
+               },
+               
+               {
+               "brush" : "3.json",
+               "duration" : 4.5
+               },
+               
+               {
+               "brush" : "4.json",
+               "duration" : 12.5
+               },
+               
+               {
+               "brush" : "5.json",
+               "duration" : 1.5
+               }
+               ],
+    "name" : "a.json"
+}

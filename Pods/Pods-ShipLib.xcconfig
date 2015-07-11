@@ -1,0 +1,2 @@
+PODS_SHIPLIB_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/ShipLib"
+PODS_SHIPLIB_OTHER_LDFLAGS = -framework AddressBook -framework AddressBookUI -framework ShipLib -framework SystemConfiguration

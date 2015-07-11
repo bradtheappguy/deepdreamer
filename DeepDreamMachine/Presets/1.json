@@ -1,0 +1,18 @@
+{
+    "name":"one",
+    "noiseScale":0.5,
+    "count":15,
+    "length":25,
+    "speed":2.0,
+    "life":0.5,
+    "alpha":0.6,
+    "thickness": 55,
+    "paletteMix": 1.0,
+    "splatter": false,
+    "chromaThreshold": 1,
+    "chromaTarget": 0,
+    "chromaSensitivity": 0.02,
+    "brushImage": "brush03.png",
+    "noiseInfluence": 1,
+    "opacity": 0.75
+}

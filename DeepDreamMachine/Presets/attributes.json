@@ -1,0 +1,84 @@
+{
+  "attributes": [
+                 {
+                 "name": "brushImage",
+                 "type": "brushImage"
+                 },
+                 {
+                 "name": "noiseScale",
+                 "type": "float",
+                 "min": 0,
+                 "max": 10
+                 },
+                 {
+                 "name": "noiseInfluence",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "count",
+                 "type": "float",
+                 "min": 300,
+                 "max": 600
+                 },
+                 {
+                 "name": "length",
+                 "type": "float",
+                 "min": 0,
+                 "max": 500
+                 },
+                 {
+                 "name": "speed",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "life",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "alpha",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "paletteMix",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "radius",
+                 "type": "float",
+                 "min": 0,
+                 "max": 500
+                 },
+                 {
+                 "name": "thickness",
+                 "type": "float",
+                 "min": 0,
+                 "max": 500
+                 },
+                 {
+                 "name": "splatter",
+                 "type": "boolean"
+                 },
+                 {
+                 "name": "chromaTarget",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 },
+                 {
+                 "name": "chromaThreshold",
+                 "type": "float",
+                 "min": 0,
+                 "max": 1
+                 }
+                 ]
+}

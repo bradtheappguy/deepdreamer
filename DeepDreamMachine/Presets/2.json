@@ -1,0 +1,16 @@
+{
+    "name":"two",
+    "count":100,
+    "length":25,
+    "speed":1.5,
+    "life":0.2,
+    "alpha":0.5,
+    "brushImage": "brush02.png",
+    "thickness": 20,
+    "splatter": false,
+    "chromaThreshold": 1,
+    "chromaSensitivity": 0.02,
+    "chromaSmooth": 0.4,
+    "chromaTarget": 0,
+    "opacity": 0.75
+}

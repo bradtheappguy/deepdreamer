@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>23F1BE19-CA31-4A45-8BAD-04D95028F42B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Impressionism</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B2D9683B-CAD3-4064-A6E6-37999B3008A5</key>
+		<string>ssh://github.com/zeromhz/impressionist.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Impressionism.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B2D9683B-CAD3-4064-A6E6-37999B3008A5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zeromhz/impressionist.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B2D9683B-CAD3-4064-A6E6-37999B3008A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B2D9683B-CAD3-4064-A6E6-37999B3008A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Impressionism-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

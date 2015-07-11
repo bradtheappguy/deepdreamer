@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/ShipLib"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFAmazonS3Client" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/ShipLib"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AFAmazonS3Client" -isystem "${PODS_ROOT}/Headers/AFNetworking" -isystem "${PODS_ROOT}/Headers/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Reachability" -isystem "${PODS_ROOT}/Headers/ShipLib"
+OTHER_LDFLAGS = -ObjC -framework AddressBook -framework AddressBookUI -framework CoreGraphics -framework MobileCoreServices -framework Security -framework ShipLib -framework SystemConfiguration
+PODS_ROOT = ${SRCROOT}/Pods

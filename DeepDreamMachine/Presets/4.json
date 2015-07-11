@@ -1,0 +1,13 @@
+{
+    "name":"four",
+    "count":850,
+    "length":10,
+    "speed":1.0,
+    "life":0.2,
+    "alpha":0.4,
+    "brushImage": "brush04.png",
+    "thickness": 5,
+    "chromaThreshold": 0,
+    "chromaTarget": 0,
+    "opacity": 0.33
+}

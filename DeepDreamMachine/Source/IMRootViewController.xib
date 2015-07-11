@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMRootViewController">
+            <connections>
+                <outlet property="brushButton" destination="Bfr-rE-hG9" id="oFC-lR-Rq1"/>
+                <outlet property="canvasButton" destination="cTT-hq-iUc" id="JX6-8A-iTD"/>
+                <outlet property="canvasContainerView" destination="1eA-Pm-GSQ" id="xPJ-km-I4K"/>
+                <outlet property="heartButton" destination="wOq-qU-op3" id="Yk7-Nj-But"/>
+                <outlet property="imagePickingButton" destination="etk-qm-Ykd" id="mEh-RU-5iP"/>
+                <outlet property="progressLabel" destination="zBQ-jv-ZWD" id="mKt-5K-htQ"/>
+                <outlet property="progressView" destination="Hdn-bE-Bya" id="F35-oA-BK1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-Pm-GSQ" customClass="IMCanvasContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1008"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etk-qm-Ykd" userLabel="Camera Button">
+                    <rect key="frame" x="0.0" y="980" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="5RY-ia-NuQ"/>
+                        <constraint firstAttribute="height" constant="44" id="YCl-HK-gZk"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="camera.png"/>
+                    <connections>
+                        <action selector="cameraButtonPressed:" destination="-1" eventType="touchUpInside" id="wkP-Le-jyO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-qU-op3" userLabel="Heart Button">
+                    <rect key="frame" x="708" y="979" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="uen-cD-l02"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="heart.png"/>
+                    <connections>
+                        <action selector="shareButtonPressed:" destination="-1" eventType="touchUpInside" id="LTM-Sx-vt4"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hdn-bE-Bya">
+                    <rect key="frame" x="309" y="996" width="150" height="2"/>
+                    <color key="tintColor" red="0.15294118230000001" green="0.59607845540000004" blue="0.074509806930000005" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="BDJ-Yn-QOP"/>
+                    </constraints>
+                </progressView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBQ-jv-ZWD">
+                    <rect key="frame" x="371" y="998" width="26" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfr-rE-hG9">
+                    <rect key="frame" x="64" y="980" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Qfk-6m-KvW"/>
+                        <constraint firstAttribute="width" constant="55" id="VmE-bd-CCe"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="pencil.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="brushButtonPressed:" destination="-1" eventType="touchUpInside" id="p1g-AF-jZq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTT-hq-iUc">
+                    <rect key="frame" x="132" y="988" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="EDk-HQ-BMY"/>
+                        <constraint firstAttribute="height" constant="44" id="vNp-pL-aYT"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="canvas.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="canvasButtonPressed:" destination="-1" eventType="touchUpInside" id="2Vo-uH-wdw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWX-DO-NBO">
+                    <rect key="frame" x="650" y="979" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5mb-ET-1lD"/>
+                        <constraint firstAttribute="width" constant="50" id="rGO-JK-M04"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="options.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="settingsButtonPressed:" destination="-1" eventType="touchUpInside" id="RuU-qb-IzL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cTT-hq-iUc" firstAttribute="top" secondItem="Bfr-rE-hG9" secondAttribute="top" id="6RQ-2n-s9Y"/>
+                <constraint firstItem="cTT-hq-iUc" firstAttribute="leading" secondItem="Bfr-rE-hG9" secondAttribute="trailing" constant="13" id="9S1-Y2-5s5"/>
+                <constraint firstItem="wOq-qU-op3" firstAttribute="top" secondItem="CWX-DO-NBO" secondAttribute="top" id="Esq-U3-PA1"/>
+                <constraint firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" id="FsH-aK-FXF"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="bottom" secondItem="cTT-hq-iUc" secondAttribute="bottom" id="KQH-Kb-Yqi"/>
+                <constraint firstItem="wOq-qU-op3" firstAttribute="bottom" secondItem="CWX-DO-NBO" secondAttribute="bottom" id="L8J-dR-ghu"/>
+                <constraint firstItem="wOq-qU-op3" firstAttribute="leading" secondItem="CWX-DO-NBO" secondAttribute="trailing" constant="8" symbolic="YES" id="P38-cc-Jmg"/>
+                <constraint firstAttribute="bottom" secondItem="wOq-qU-op3" secondAttribute="bottom" constant="1" id="TR0-1g-T2N"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="etk-qm-Ykd" secondAttribute="leading" id="aiq-BY-I4a"/>
+                <constraint firstItem="etk-qm-Ykd" firstAttribute="top" secondItem="Bfr-rE-hG9" secondAttribute="top" id="dli-kE-JcE"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" id="iCS-Pp-kQy"/>
+                <constraint firstItem="Bfr-rE-hG9" firstAttribute="baseline" secondItem="cTT-hq-iUc" secondAttribute="baseline" id="jlE-hU-pDe"/>
+                <constraint firstItem="zBQ-jv-ZWD" firstAttribute="top" secondItem="Hdn-bE-Bya" secondAttribute="bottom" id="lb3-oz-9bt"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzN-0c-iu3"/>
+                <constraint firstItem="wOq-qU-op3" firstAttribute="baseline" secondItem="CWX-DO-NBO" secondAttribute="baseline" id="pcA-v5-WKz"/>
+                <constraint firstItem="zBQ-jv-ZWD" firstAttribute="centerX" secondItem="Hdn-bE-Bya" secondAttribute="centerX" id="s1A-iB-ghT"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sTL-a5-haM"/>
+                <constraint firstAttribute="bottom" secondItem="zBQ-jv-ZWD" secondAttribute="bottom" constant="14" id="uLs-v4-FyL"/>
+                <constraint firstItem="Bfr-rE-hG9" firstAttribute="leading" secondItem="etk-qm-Ykd" secondAttribute="trailing" constant="9" id="ubR-xj-xKi"/>
+                <constraint firstAttribute="bottom" secondItem="Bfr-rE-hG9" secondAttribute="bottom" id="wJB-J9-HvA"/>
+                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="centerX" secondItem="zBQ-jv-ZWD" secondAttribute="centerX" id="xP7-JX-1nM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.png" width="28" height="21"/>
+        <image name="canvas.png" width="28" height="28"/>
+        <image name="heart.png" width="21" height="28"/>
+        <image name="options.png" width="28" height="28"/>
+        <image name="pencil.png" width="28" height="28"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="768" height="1024"/>
+            <size key="landscapeSize" width="1024" height="768"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>

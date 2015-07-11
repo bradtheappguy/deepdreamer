@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flurry_app_token</key>
+	<string>FXYR9N7H5X7YWPR5925S</string>
+	<key>imgur_client_id</key>
+	<string>ee6b3bb001db0f2</string>
+	<key>appstore_id</key>
+	<string>859329542</string>
+	<key>imgur_client_secret</key>
+	<string>72d99f9ff9d3512074d6bd4c763342435c7281db</string>
+	<key>sincerely_app_key</key>
+	<string>P6JHUCG5X85GU76N5OY59XQUIX53BDFJ58SGQ8EB</string>
+	<key>api_base_url</key>
+    <string>http://impressionist.theappguy.guru/</string>
+</dict>
+</plist>
