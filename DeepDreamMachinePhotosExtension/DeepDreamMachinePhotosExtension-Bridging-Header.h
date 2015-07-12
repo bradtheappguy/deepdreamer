@@ -7,3 +7,4 @@
 //
 
 #import "DeepDreamAPIClient.h"
+#import "UIImage+Resize.h"
