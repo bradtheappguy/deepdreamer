@@ -41,6 +41,10 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor clearColor];
+  self.view.superview.backgroundColor = [UIColor clearColor];
+  self.view.superview.layer.shadowColor = [UIColor clearColor].CGColor;
+  self.preferredContentSize = CGSizeMake(510, 513);
 
 #if DEBUG
   self.debugEditButton.hidden = NO;
@@ -152,14 +156,7 @@
 }
 
 -(IBAction)actionButtonPressed:(UIButton  *)sender {
-  [_selectedBrush save];
-  if (self.segmentedControl.selectedSegmentIndex == 0) {
-    [self.delegate brushPicker:self didSelectBrush:_selectedBrush];
-  }
-  else {
     [self.delegate brushPicker:self didSelectSequence:_selectedSequence];
-  }
-
 }
 
 -(IBAction)segmentedControlValueDidChange:(UISegmentedControl *)sender {

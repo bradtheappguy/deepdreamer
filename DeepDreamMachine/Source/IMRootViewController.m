@@ -31,6 +31,7 @@
 #import "IMCanvasPickerViewController.h"
 #import "ScaleAnimation.h"
 #import "IMBrush.h"
+#import "DeepDreamAPIClient.h"
 
 @interface IMRootViewController ()<
     MFMailComposeViewControllerDelegate, IMSharingViewControllerDelegate,
@@ -52,6 +53,8 @@
 @property(weak, nonatomic) IBOutlet UIButton *canvasButton;
 @property(weak, nonatomic) IBOutlet UIButton *imagePickingButton;
 @property(weak, nonatomic) IBOutlet UIScrollView *effectPickingScrollView;
+
+@property(weak, nonatomic) IBOutlet UIImageView *animImage;
 
 @property(nonatomic) IMCrossAppSharingController *crossAppSharingController;
 @end
@@ -82,7 +85,9 @@
       NSLog(@"UNREACHABLE!");
     };
     [reach startNotifier];
+
   }
+  
   return self;
 }
 
@@ -115,6 +120,19 @@
   [self setInitialLoadingState:NO];
   self.heartButton.enabled = NO;
   _scaleAnimationController = [[ScaleAnimation alloc] init];
+  
+  [self.animImage setAnimationDuration:3.0];
+  [self.animImage setAnimationImages:@[
+                                       [UIImage imageNamed:@"default-portrait_ipad0"],
+                                       [UIImage imageNamed:@"default-portrait_ipad1"],
+                                       [UIImage imageNamed:@"default-portrait_ipad2"],
+                                       [UIImage imageNamed:@"default-portrait_ipad3"]
+                                       ]];
+  [self.animImage startAnimating];
+  
+  [self.canvasContainerView.canvasView removeFromSuperview];
+  self.canvasContainerView.alpha = 0.5;
+  
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -169,7 +187,7 @@
   if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
-    self.popover.backgroundColor = vc.view.backgroundColor;
+    self.popover.backgroundColor = [UIColor clearColor];
     self.popover.delegate = self;
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
@@ -196,6 +214,7 @@
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
     self.popover.backgroundColor = vc.view.backgroundColor;
+        self.popover.backgroundColor = [UIColor clearColor];;
     self.popover.delegate = self;
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
@@ -219,6 +238,7 @@
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
     self.popover.backgroundColor = vc.view.backgroundColor;
+        self.popover.backgroundColor = [UIColor clearColor];
     self.popover.delegate = self;
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
@@ -248,15 +268,16 @@
   // nav.preferredContentSize = CGSizeMake(320, 480);
 
   if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-    vc.preferredContentSize = CGSizeMake(320, 480);
+    vc.preferredContentSize = CGSizeMake(433, 347);
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
     self.popover.delegate = self;
     self.popover.backgroundColor = vc.view.backgroundColor;
+        //self.popover.backgroundColor = [UIColor clearColor];
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
                                   inView:self.view
-                permittedArrowDirections:UIPopoverArrowDirectionDown
+                permittedArrowDirections:UIPopoverArrowDirectionUp
                                 animated:YES];
   } else {
     [vc.view setBounds:self.view.bounds];
@@ -289,6 +310,7 @@
         initWithContentViewController:settingsViewController];
     self.popover.delegate = self;
     self.popover.backgroundColor = settingsViewController.view.backgroundColor;
+        self.popover.backgroundColor = [UIColor clearColor];
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
                                   inView:self.view
@@ -447,12 +469,14 @@ static UINavigationController *nav2;
   [self dismissPopoverAndModalViewControllers];
 }
 
-- (void)brushPicker:(IMBrushPickerViewController *)picker
-  didSelectSequence:(IMSequence *)sequence {
-  [self.canvasContainerView resetCanvas];
-  NSString *json = [sequence json];
-  [self.canvasContainerView setSequence:json];
-  [self dismissPopoverAndModalViewControllers];
+- (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(IMSequence *)sequence {
+  UIImage *image = [self.canvasContainerView currentBackgroundImage];
+  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:1 completionHandler:^(UIImage *image) {
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+      [self.canvasContainerView setBackgroundImage:image];
+    });
+  }];
+  ;
 }
 
 - (void)brushPickerDidCancel:(IMBrushPickerViewController *)picker {
@@ -645,6 +669,7 @@ static UINavigationController *nav2;
       if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         self.popover = [[UIPopoverController alloc]
             initWithContentViewController:controller];
+            self.popover.backgroundColor = [UIColor clearColor];
         [self.popover presentPopoverFromRect:self.heartButton.frame
                                       inView:self.view
                     permittedArrowDirections:UIPopoverArrowDirectionDown

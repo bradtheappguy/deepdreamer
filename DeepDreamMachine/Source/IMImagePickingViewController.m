@@ -136,7 +136,7 @@
 
 - (IBAction)exampleButtonPressed:(UIButton *)sender {
   NSURL *url = [[NSBundle mainBundle]
-      URLForResource:[NSString stringWithFormat:@"output2", sender.tag]
+      URLForResource:[NSString stringWithFormat:@"sample%d", sender.tag]
        withExtension:@"jpg"];
   [self.delegate picker:self didFinishPickingImageWithURL:url];
   IMRootViewController *rootViewController = (IMRootViewController *)[

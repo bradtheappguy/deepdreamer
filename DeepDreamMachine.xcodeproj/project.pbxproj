@@ -59,6 +59,34 @@
 		A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA111B52100C00A1CC1A /* heart-popup.png */; };
 		A271DA151B52100C00A1CC1A /* dream-popup2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA121B52100C00A1CC1A /* dream-popup2.png */; };
 		A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */; };
+		A271DA181B52620F00A1CC1A /* dreampickerbg@x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA171B52620F00A1CC1A /* dreampickerbg@x.png */; };
+		A271DB131B52629300A1CC1A /* button-layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DAFD1B52629300A1CC1A /* button-layer-2.png */; };
+		A271DB141B52629300A1CC1A /* button-layer-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DAFE1B52629300A1CC1A /* button-layer-2@2x.png */; };
+		A271DB151B52629300A1CC1A /* button-layer-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DAFF1B52629300A1CC1A /* button-layer-1.png */; };
+		A271DB161B52629300A1CC1A /* button-layer-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB001B52629300A1CC1A /* button-layer-1@2x.png */; };
+		A271DB171B52629300A1CC1A /* dream-popup-back.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB011B52629300A1CC1A /* dream-popup-back.png */; };
+		A271DB181B52629300A1CC1A /* app6.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB021B52629300A1CC1A /* app6.png */; };
+		A271DB191B52629300A1CC1A /* button-layer-6.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB031B52629300A1CC1A /* button-layer-6.png */; };
+		A271DB1A1B52629300A1CC1A /* button-layer-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB041B52629300A1CC1A /* button-layer-6@2x.png */; };
+		A271DB1B1B52629300A1CC1A /* button-layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB051B52629300A1CC1A /* button-layer-5.png */; };
+		A271DB1C1B52629300A1CC1A /* button-layer-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB061B52629300A1CC1A /* button-layer-5@2x.png */; };
+		A271DB1D1B52629300A1CC1A /* button-layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB071B52629300A1CC1A /* button-layer-4.png */; };
+		A271DB1E1B52629300A1CC1A /* button-layer-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB081B52629300A1CC1A /* button-layer-4@2x.png */; };
+		A271DB1F1B52629300A1CC1A /* button-layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB091B52629300A1CC1A /* button-layer-3.png */; };
+		A271DB201B52629300A1CC1A /* button-layer-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0A1B52629300A1CC1A /* button-layer-3@2x.png */; };
+		A271DB211B52629300A1CC1A /* credits.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0B1B52629300A1CC1A /* credits.png */; };
+		A271DB221B52629300A1CC1A /* credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0C1B52629300A1CC1A /* credits@2x.png */; };
+		A271DB231B52629300A1CC1A /* ExportFilmRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0D1B52629300A1CC1A /* ExportFilmRoll.png */; };
+		A271DB241B52629300A1CC1A /* ExportFilmRoll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0E1B52629300A1CC1A /* ExportFilmRoll@2x.png */; };
+		A271DB251B52629300A1CC1A /* dream-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB0F1B52629300A1CC1A /* dream-popup.png */; };
+		A271DB261B52629300A1CC1A /* camera-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB101B52629300A1CC1A /* camera-popup.png */; };
+		A271DB271B52629300A1CC1A /* icon-robot.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB111B52629300A1CC1A /* icon-robot.png */; };
+		A271DB281B52629300A1CC1A /* brush_thumbs in Resources */ = {isa = PBXBuildFile; fileRef = A271DB121B52629300A1CC1A /* brush_thumbs */; };
+		A271DB2A1B526A4C00A1CC1A /* formatting.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB291B526A4C00A1CC1A /* formatting.png */; };
+		A271DB2F1B52741C00A1CC1A /* default-portrait_ipad2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */; };
+		A271DB301B52741C00A1CC1A /* default-portrait_ipad1.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */; };
+		A271DB311B52741C00A1CC1A /* default-portrait_ipad0.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */; };
+		A271DB321B52741C00A1CC1A /* default-portrait_ipad3.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -337,6 +365,34 @@
 		A271DA111B52100C00A1CC1A /* heart-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-popup.png"; path = "DeepDreamMachine/Images/heart-popup.png"; sourceTree = SOURCE_ROOT; };
 		A271DA121B52100C00A1CC1A /* dream-popup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2.png"; path = "DeepDreamMachine/Images/dream-popup2.png"; sourceTree = SOURCE_ROOT; };
 		A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2@2x.png"; path = "DeepDreamMachine/Images/dream-popup2@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DA171B52620F00A1CC1A /* dreampickerbg@x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dreampickerbg@x.png"; sourceTree = "<group>"; };
+		A271DAFD1B52629300A1CC1A /* button-layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-2.png"; path = "DeepDreamMachine/Images/button-layer-2.png"; sourceTree = SOURCE_ROOT; };
+		A271DAFE1B52629300A1CC1A /* button-layer-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-2@2x.png"; path = "DeepDreamMachine/Images/button-layer-2@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DAFF1B52629300A1CC1A /* button-layer-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-1.png"; path = "DeepDreamMachine/Images/button-layer-1.png"; sourceTree = SOURCE_ROOT; };
+		A271DB001B52629300A1CC1A /* button-layer-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-1@2x.png"; path = "DeepDreamMachine/Images/button-layer-1@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB011B52629300A1CC1A /* dream-popup-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup-back.png"; path = "DeepDreamMachine/Images/dream-popup-back.png"; sourceTree = SOURCE_ROOT; };
+		A271DB021B52629300A1CC1A /* app6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app6.png; path = DeepDreamMachine/Images/app6.png; sourceTree = SOURCE_ROOT; };
+		A271DB031B52629300A1CC1A /* button-layer-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-6.png"; path = "DeepDreamMachine/Images/button-layer-6.png"; sourceTree = SOURCE_ROOT; };
+		A271DB041B52629300A1CC1A /* button-layer-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-6@2x.png"; path = "DeepDreamMachine/Images/button-layer-6@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB051B52629300A1CC1A /* button-layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-5.png"; path = "DeepDreamMachine/Images/button-layer-5.png"; sourceTree = SOURCE_ROOT; };
+		A271DB061B52629300A1CC1A /* button-layer-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-5@2x.png"; path = "DeepDreamMachine/Images/button-layer-5@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB071B52629300A1CC1A /* button-layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-4.png"; path = "DeepDreamMachine/Images/button-layer-4.png"; sourceTree = SOURCE_ROOT; };
+		A271DB081B52629300A1CC1A /* button-layer-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-4@2x.png"; path = "DeepDreamMachine/Images/button-layer-4@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB091B52629300A1CC1A /* button-layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-3.png"; path = "DeepDreamMachine/Images/button-layer-3.png"; sourceTree = SOURCE_ROOT; };
+		A271DB0A1B52629300A1CC1A /* button-layer-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-3@2x.png"; path = "DeepDreamMachine/Images/button-layer-3@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB0B1B52629300A1CC1A /* credits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = credits.png; path = DeepDreamMachine/Images/credits.png; sourceTree = SOURCE_ROOT; };
+		A271DB0C1B52629300A1CC1A /* credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "credits@2x.png"; path = "DeepDreamMachine/Images/credits@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB0D1B52629300A1CC1A /* ExportFilmRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExportFilmRoll.png; path = DeepDreamMachine/Images/ExportFilmRoll.png; sourceTree = SOURCE_ROOT; };
+		A271DB0E1B52629300A1CC1A /* ExportFilmRoll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ExportFilmRoll@2x.png"; path = "DeepDreamMachine/Images/ExportFilmRoll@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DB0F1B52629300A1CC1A /* dream-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup.png"; path = "DeepDreamMachine/Images/dream-popup.png"; sourceTree = SOURCE_ROOT; };
+		A271DB101B52629300A1CC1A /* camera-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-popup.png"; path = "DeepDreamMachine/Images/camera-popup.png"; sourceTree = SOURCE_ROOT; };
+		A271DB111B52629300A1CC1A /* icon-robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-robot.png"; path = "DeepDreamMachine/Images/icon-robot.png"; sourceTree = SOURCE_ROOT; };
+		A271DB121B52629300A1CC1A /* brush_thumbs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = brush_thumbs; path = DeepDreamMachine/Images/brush_thumbs; sourceTree = SOURCE_ROOT; };
+		A271DB291B526A4C00A1CC1A /* formatting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = formatting.png; path = DeepDreamMachine/Images/formatting.png; sourceTree = SOURCE_ROOT; };
+		A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad2.png"; sourceTree = "<group>"; };
+		A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad1.png"; sourceTree = "<group>"; };
+		A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad0.png"; sourceTree = "<group>"; };
+		A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad3.png"; sourceTree = "<group>"; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -1142,6 +1198,34 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */,
+				A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */,
+				A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */,
+				A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */,
+				A271DB291B526A4C00A1CC1A /* formatting.png */,
+				A271DAFD1B52629300A1CC1A /* button-layer-2.png */,
+				A271DAFE1B52629300A1CC1A /* button-layer-2@2x.png */,
+				A271DAFF1B52629300A1CC1A /* button-layer-1.png */,
+				A271DB001B52629300A1CC1A /* button-layer-1@2x.png */,
+				A271DB011B52629300A1CC1A /* dream-popup-back.png */,
+				A271DB021B52629300A1CC1A /* app6.png */,
+				A271DB031B52629300A1CC1A /* button-layer-6.png */,
+				A271DB041B52629300A1CC1A /* button-layer-6@2x.png */,
+				A271DB051B52629300A1CC1A /* button-layer-5.png */,
+				A271DB061B52629300A1CC1A /* button-layer-5@2x.png */,
+				A271DB071B52629300A1CC1A /* button-layer-4.png */,
+				A271DB081B52629300A1CC1A /* button-layer-4@2x.png */,
+				A271DB091B52629300A1CC1A /* button-layer-3.png */,
+				A271DB0A1B52629300A1CC1A /* button-layer-3@2x.png */,
+				A271DB0B1B52629300A1CC1A /* credits.png */,
+				A271DB0C1B52629300A1CC1A /* credits@2x.png */,
+				A271DB0D1B52629300A1CC1A /* ExportFilmRoll.png */,
+				A271DB0E1B52629300A1CC1A /* ExportFilmRoll@2x.png */,
+				A271DB0F1B52629300A1CC1A /* dream-popup.png */,
+				A271DB101B52629300A1CC1A /* camera-popup.png */,
+				A271DB111B52629300A1CC1A /* icon-robot.png */,
+				A271DB121B52629300A1CC1A /* brush_thumbs */,
+				A271DA171B52620F00A1CC1A /* dreampickerbg@x.png */,
 				A271DA111B52100C00A1CC1A /* heart-popup.png */,
 				A271DA121B52100C00A1CC1A /* dream-popup2.png */,
 				A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */,
@@ -1355,6 +1439,10 @@
 				A2900323192C5B0900749630 /* sample2_thumb@2x.jpg in Resources */,
 				D3A13ED01909D6360060FA88 /* camera.png in Resources */,
 				D3A69D29190F444B0095627A /* example_2.png in Resources */,
+				A271DB2A1B526A4C00A1CC1A /* formatting.png in Resources */,
+				A271DB2F1B52741C00A1CC1A /* default-portrait_ipad2.png in Resources */,
+				A271DB221B52629300A1CC1A /* credits@2x.png in Resources */,
+				A271DB1D1B52629300A1CC1A /* button-layer-4.png in Resources */,
 				D3A13EA61909D62E0060FA88 /* IMImagePickingViewController.xib in Resources */,
 				A290030D192B2A7300749630 /* IMWebViewController.xib in Resources */,
 				A271D9E21B51A5C000A1CC1A /* canvas.png in Resources */,
@@ -1363,15 +1451,24 @@
 				D3A13EB21909D62E0060FA88 /* IMSharingViewController.xib in Resources */,
 				D33423A3190E305C005D3EE6 /* ShareInstagram-style7.png in Resources */,
 				D36A874918FA0E2000C1A1B7 /* config.plist in Resources */,
+				A271DB161B52629300A1CC1A /* button-layer-1@2x.png in Resources */,
 				D3A13EDC1909D6360060FA88 /* ImportClipboard.png in Resources */,
+				A271DB241B52629300A1CC1A /* ExportFilmRoll@2x.png in Resources */,
 				D33423A2190E305C005D3EE6 /* ShareFacebook-style7@2x.png in Resources */,
 				A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */,
 				D33423AF190E307C005D3EE6 /* ShareTwitter-style7.png in Resources */,
 				A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */,
+				A271DB191B52629300A1CC1A /* button-layer-6.png in Resources */,
+				A271DB251B52629300A1CC1A /* dream-popup.png in Resources */,
+				A271DB261B52629300A1CC1A /* camera-popup.png in Resources */,
+				A271DB301B52741C00A1CC1A /* default-portrait_ipad1.png in Resources */,
+				A271DB281B52629300A1CC1A /* brush_thumbs in Resources */,
+				A271DB1C1B52629300A1CC1A /* button-layer-5@2x.png in Resources */,
 				A290032F192C5B0900749630 /* sample8_thumb@2x.jpg in Resources */,
 				A2D1FF7F197DE5070076AFCF /* IMCanvasPickerViewController.xib in Resources */,
 				D34E9814190C845E007465F5 /* RadialGradient.fsh in Resources */,
 				A271D9FC1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */,
+				A271DB271B52629300A1CC1A /* icon-robot.png in Resources */,
 				A271D9E71B51A5C000A1CC1A /* SoundIcon@2x.png in Resources */,
 				D33423B0190E307C005D3EE6 /* ShareTwitter-style7@2x.png in Resources */,
 				D3A69D25190F2BBA0095627A /* iTunesArtwork@2x.png in Resources */,
@@ -1384,10 +1481,14 @@
 				A271D9EC1B51A5C000A1CC1A /* pencil.png in Resources */,
 				A271D9ED1B51A5C000A1CC1A /* pencil@2x.png in Resources */,
 				A271D9FE1B51E06F00A1CC1A /* icon-camera@2x.png in Resources */,
+				A271DB201B52629300A1CC1A /* button-layer-3@2x.png in Resources */,
 				D3A13EA91909D62E0060FA88 /* IMRootViewController.xib in Resources */,
+				A271DB131B52629300A1CC1A /* button-layer-2.png in Resources */,
+				A271DB1A1B52629300A1CC1A /* button-layer-6@2x.png in Resources */,
 				A271D9FA1B51E06F00A1CC1A /* icon-share@2x.png in Resources */,
 				D334239B190DD525005D3EE6 /* bg_avatar.png in Resources */,
 				A205069619380DA900D305CA /* attributes.json in Resources */,
+				A271DB211B52629300A1CC1A /* credits.png in Resources */,
 				D3A69D23190F2BB40095627A /* iTunesArtwork.png in Resources */,
 				D334239C190DD525005D3EE6 /* bg_avatar@2x.png in Resources */,
 				D35068D918F779520058BDA9 /* InfoPlist.strings in Resources */,
@@ -1398,12 +1499,15 @@
 				D34E9811190C845E007465F5 /* AlphaTexture.fsh in Resources */,
 				A271D9E91B51A5C000A1CC1A /* auto@2x.png in Resources */,
 				A290032E192C5B0900749630 /* sample7.jpg in Resources */,
+				A271DB231B52629300A1CC1A /* ExportFilmRoll.png in Resources */,
 				D33423AE190E307C005D3EE6 /* ShareTumblr-style7@2x.png in Resources */,
 				D33423AB190E307C005D3EE6 /* ShareSincerely-style7.png in Resources */,
 				D34E9816190C845E007465F5 /* Vertex.vsh in Resources */,
 				A271D9EA1B51A5C000A1CC1A /* options.png in Resources */,
+				A271DB181B52629300A1CC1A /* app6.png in Resources */,
 				D3A13ECE1909D6360060FA88 /* bg_bar~iPad@2x.png in Resources */,
 				A271DA011B51EF0000A1CC1A /* camera-popup@2x.png in Resources */,
+				A271DB321B52741C00A1CC1A /* default-portrait_ipad3.png in Resources */,
 				D33423AC190E307C005D3EE6 /* ShareSincerely-style7@2x.png in Resources */,
 				D3A13ED11909D6360060FA88 /* camera@2x.png in Resources */,
 				D3F19C5D19033C7800FD5551 /* Settings.storyboard in Resources */,
@@ -1415,12 +1519,15 @@
 				A290032A192C5B0900749630 /* sample5.jpg in Resources */,
 				D33423AD190E307C005D3EE6 /* ShareTumblr-style7.png in Resources */,
 				D3A13ED41909D6360060FA88 /* ExportMail.png in Resources */,
+				A271DB1B1B52629300A1CC1A /* button-layer-5.png in Resources */,
 				A2D1FF84197DF2EB0076AFCF /* b.json in Resources */,
 				A21528601989FE220070732D /* IMWelcomeViewController.xib in Resources */,
 				D350690418F879D10058BDA9 /* Localizable.strings in Resources */,
 				D3A13ED21909D6360060FA88 /* ExportClipboard.png in Resources */,
 				A205069F193814C000D305CA /* IMBooleanAttributeTableViewCell.xib in Resources */,
 				A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */,
+				A271DB1E1B52629300A1CC1A /* button-layer-4@2x.png in Resources */,
+				A271DB311B52741C00A1CC1A /* default-portrait_ipad0.png in Resources */,
 				C3B26A461970B56A001917F5 /* IMBrushPickerViewController.xib in Resources */,
 				D34E9812190C845E007465F5 /* Flat.fsh in Resources */,
 				A271D9E81B51A5C000A1CC1A /* auto.png in Resources */,
@@ -1429,9 +1536,11 @@
 				A2900322192C5B0900749630 /* sample1.jpg in Resources */,
 				A290032C192C5B0900749630 /* sample6.jpg in Resources */,
 				C3C7B741194E626500DE1466 /* 7.json in Resources */,
+				A271DB1F1B52629300A1CC1A /* button-layer-3.png in Resources */,
 				C3C7B744194E626500DE1466 /* 10.json in Resources */,
 				A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */,
 				A2900329192C5B0900749630 /* sample5_thumb@2x.jpg in Resources */,
+				A271DA181B52620F00A1CC1A /* dreampickerbg@x.png in Resources */,
 				A2900328192C5B0900749630 /* sample4.jpg in Resources */,
 				D33423A1190E305C005D3EE6 /* ShareFacebook-style7.png in Resources */,
 				D3A69D28190F444B0095627A /* example_1.png in Resources */,
@@ -1439,11 +1548,13 @@
 				A290032D192C5B0900749630 /* sample7_thumb@2x.jpg in Resources */,
 				D3A13EE11909D6360060FA88 /* Settings@2x.png in Resources */,
 				D3A13ECD1909D6360060FA88 /* bg_bar@2x.png in Resources */,
+				A271DB171B52629300A1CC1A /* dream-popup-back.png in Resources */,
 				A205069B19380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib in Resources */,
 				D35068E118F779520058BDA9 /* Images.xcassets in Resources */,
 				D3A13EDE1909D6360060FA88 /* ImportFilmRoll.png in Resources */,
 				C3C7B743194E626500DE1466 /* 9.json in Resources */,
 				A2900325192C5B0900749630 /* sample3_thumb@2x.jpg in Resources */,
+				A271DB151B52629300A1CC1A /* button-layer-1.png in Resources */,
 				D3A13EE21909D6360060FA88 /* skyline2.png in Resources */,
 				A2900321192C5B0900749630 /* sample1_thumb@2x.jpg in Resources */,
 				D3A13ED71909D6360060FA88 /* ExportOpenIn@2x.png in Resources */,
@@ -1452,6 +1563,7 @@
 				A2900333192C5B0900749630 /* sample9.jpg in Resources */,
 				A271D9E61B51A5C000A1CC1A /* SoundIcon.png in Resources */,
 				D34E9813190C845E007465F5 /* Pattern.fsh in Resources */,
+				A271DB141B52629300A1CC1A /* button-layer-2@2x.png in Resources */,
 				D3A13EDB1909D6360060FA88 /* ImportCamera@2x.png in Resources */,
 				A2900331192C5B0900749630 /* sample9_thumb@2x.jpg in Resources */,
 				D34E9815190C845E007465F5 /* Texture.fsh in Resources */,

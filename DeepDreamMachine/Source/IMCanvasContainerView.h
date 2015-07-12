@@ -36,4 +36,7 @@
 
 -(void) setBackgroundImageAlpha:(CGFloat)alpha;
 
+- (UIImage *) currentBackgroundImage;
+- (void) setBackgroundImage:(UIImage *)image;
+
 @end

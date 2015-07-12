@@ -38,13 +38,13 @@
 
   NSLog(@"Did finish launching.");
 
-  [[DeepDreamAPIClient sharedClient]
-      requestDeepDreamImageUsingImage:nil
+ /* [[DeepDreamAPIClient sharedClient]
+      requestDeepDreamImageUsingImage:[UIImage imageNamed:@"skyline2.png"]
                             withStyle:1
                     completionHandler:^(UIImage *image) {
                       NSLog(@"%@", image);
                     }];
-
+*/
   return YES;
 }
 

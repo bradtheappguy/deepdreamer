@@ -1,139 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMBrushPickerViewController">
             <connections>
-                <outlet property="brushNameLabel" destination="XJK-zK-V0o" id="aHE-Zx-Tu7"/>
-                <outlet property="closeButton" destination="Q0F-wi-WgB" id="1be-mu-oXh"/>
-                <outlet property="debugEditButton" destination="YQj-Fv-5mV" id="ZYD-wk-VkK"/>
-                <outlet property="leftButton" destination="N7t-G5-uJ4" id="ZGT-Nk-zRG"/>
-                <outlet property="opacitySlider" destination="0Zz-O1-3Tw" id="iad-6C-ill"/>
-                <outlet property="rightButton" destination="gca-40-qc7" id="10K-Yi-0p5"/>
-                <outlet property="segmentedControl" destination="8Sf-Xr-TCz" id="J0E-Tp-U8f"/>
-                <outlet property="sizeSilder" destination="vFZ-M9-sh6" id="Vo8-53-hw6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="510" height="524"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vFZ-M9-sh6">
-                    <rect key="frame" x="18" y="317" width="284" height="31"/>
-                    <connections>
-                        <action selector="sizeSliderDidChange:" destination="-1" eventType="valueChanged" id="QPt-Ol-K1d"/>
-                    </connections>
-                </slider>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcO-aH-Dk7">
-                    <rect key="frame" x="20" y="294" width="33" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Zz-O1-3Tw">
-                    <rect key="frame" x="18" y="382" width="284" height="31"/>
-                    <connections>
-                        <action selector="opacitySliderDidChange:" destination="-1" eventType="valueChanged" id="Gxr-gZ-Iix"/>
-                    </connections>
-                </slider>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opacity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-Oh-lCL">
-                    <rect key="frame" x="20" y="358" width="60" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a brush" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBZ-OG-x09">
-                    <rect key="frame" x="20" y="17" width="204" height="30"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-wi-WgB">
-                    <rect key="frame" x="258" y="6" width="55" height="55"/>
-                    <state key="normal" image="close.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="kPW-Rj-7kE"/>
-                    </connections>
-                </button>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Sf-Xr-TCz">
-                    <rect key="frame" x="20" y="67" width="280" height="29"/>
-                    <segments>
-                        <segment title="Brushes"/>
-                        <segment title="Auto-Painter"/>
-                    </segments>
-                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <action selector="segmentedControlValueDidChange:" destination="-1" eventType="valueChanged" id="MVB-aU-msF"/>
-                    </connections>
-                </segmentedControl>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brush Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJK-zK-V0o">
-                    <rect key="frame" x="112" y="121" width="96" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQj-Fv-5mV">
-                    <rect key="frame" x="166" y="17" width="102" height="30"/>
-                    <state key="normal" title="**debug edit**">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="debugEditButtonPressed:" destination="-1" eventType="touchUpInside" id="GOo-yR-V7A"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-G5-uJ4">
-                    <rect key="frame" x="20" y="113" width="30" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                    <state key="normal" title="&lt;">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="leftBrushButtonPressed:" destination="-1" eventType="touchUpInside" id="85k-hB-xYu"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gca-40-qc7">
-                    <rect key="frame" x="270" y="113" width="30" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                    <state key="normal" title=">">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="rightBrushButtonPressed:" destination="-1" eventType="touchUpInside" id="4cF-Ez-l1Y"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-cp-fih" customClass="UIImageView">
-                    <rect key="frame" x="20" y="167" width="274" height="113"/>
-                    <color key="backgroundColor" red="0.0" green="0.6599672379" blue="0.84699470769999996" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-ND-dLs">
-                    <rect key="frame" x="23" y="420" width="274" height="30"/>
-                    <state key="normal" title="GO">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dream-popup2.png" translatesAutoresizingMaskIntoConstraints="NO" id="or0-QB-dCB" userLabel="Bubble">
+                    <rect key="frame" x="-11" y="0.0" width="526" height="513"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dream-popup-back.png" translatesAutoresizingMaskIntoConstraints="NO" id="aMS-r1-ERU" userLabel="BubbleBackground">
+                    <rect key="frame" x="11" y="145" width="486" height="353"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-ND-dLs">
+                    <rect key="frame" x="16" y="246" width="139" height="86"/>
+                    <state key="normal" image="button-layer-1.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="ryq-zW-A1M"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bp-WW-A4y">
+                    <rect key="frame" x="219" y="296" width="139" height="139"/>
+                    <state key="normal" image="button-layer-6.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="YTL-tZ-TCv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-3J-eck">
+                    <rect key="frame" x="82" y="337" width="139" height="98"/>
+                    <state key="normal" image="button-layer-5.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="FRv-bp-jhT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-FW-ESM">
+                    <rect key="frame" x="333" y="226" width="139" height="89"/>
+                    <state key="normal" image="button-layer-4.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="GrQ-yq-w87"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-Wm-8hv">
+                    <rect key="frame" x="236" y="202" width="139" height="86"/>
+                    <state key="normal" image="button-layer-3.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="rMB-4L-nF6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JX-8U-ZUe">
+                    <rect key="frame" x="121" y="221" width="139" height="86"/>
+                    <state key="normal" image="button-layer-2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="7Am-KX-RGN"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select a Dream" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-bt-kdZ" userLabel="SelectDream">
+                    <rect key="frame" x="149" y="158" width="178" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.35294117647058826" green="0.96862745098039216" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
-            <point key="canvasLocation" x="89" y="186"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="272" y="217"/>
         </view>
     </objects>
     <resources>
-        <image name="close.png" width="30" height="30"/>
+        <image name="button-layer-1.png" width="84" height="84"/>
+        <image name="button-layer-2.png" width="86" height="86"/>
+        <image name="button-layer-3.png" width="72" height="72"/>
+        <image name="button-layer-4.png" width="90" height="90"/>
+        <image name="button-layer-5.png" width="99" height="99"/>
+        <image name="button-layer-6.png" width="140" height="140"/>
+        <image name="dream-popup-back.png" width="944" height="705"/>
+        <image name="dream-popup2.png" width="1019" height="1026"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4">
-            <size key="portraitSize" width="320" height="568"/>
-            <size key="landscapeSize" width="568" height="320"/>
-        </simulatedScreenMetrics>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

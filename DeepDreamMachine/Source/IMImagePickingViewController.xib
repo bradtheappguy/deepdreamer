@@ -23,11 +23,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="246" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="2fY-k7-YQN" userLabel="Top Scroll View">
-                            <rect key="frame" x="-7" y="214" width="519" height="345"/>
+                            <rect key="frame" x="-7" y="187" width="519" height="372"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sft-lf-Rah">
-                                    <rect key="frame" x="120" y="118" width="134" height="90"/>
+                                    <rect key="frame" x="67" y="89" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample3_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,7 +37,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eXZ-iS-Ul7">
-                                    <rect key="frame" x="269" y="314" width="134" height="90"/>
+                                    <rect key="frame" x="269" y="205" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample5_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,7 +47,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ehN-IB-Akr">
-                                    <rect key="frame" x="269" y="118" width="134" height="90"/>
+                                    <rect key="frame" x="324" y="0.0" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample6_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,7 +57,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ab-6x-k9j">
-                                    <rect key="frame" x="120" y="216" width="134" height="90"/>
+                                    <rect key="frame" x="192" y="89" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample7_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,18 +66,8 @@
                                         <action selector="exampleButtonPressed:" destination="-1" eventType="touchUpInside" id="WrO-ra-52W"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RhW-wu-x4N">
-                                    <rect key="frame" x="269" y="216" width="134" height="90"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="sample8_thumb.jpg">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="exampleButtonPressed:" destination="-1" eventType="touchUpInside" id="kAY-1r-2aF"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sst-cI-YBf">
-                                    <rect key="frame" x="120" y="314" width="134" height="90"/>
+                                    <rect key="frame" x="120" y="205" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample9_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,9 +77,9 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zGH-gx-Naf">
-                                    <rect key="frame" x="120" y="20" width="134" height="90"/>
+                                    <rect key="frame" x="67" y="0.0" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="in1.jpg">
+                                    <state key="normal" image="sample1_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
@@ -97,13 +87,23 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wJG-zZ-JZU">
-                                    <rect key="frame" x="269" y="20" width="134" height="90"/>
+                                    <rect key="frame" x="192" y="0.0" width="134" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="sample2_thumb.jpg">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
                                         <action selector="exampleButtonPressed:" destination="-1" eventType="touchUpInside" id="gOj-R0-73f"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RhW-wu-x4N">
+                                    <rect key="frame" x="324" y="89" width="134" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="sample8_thumb.jpg">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="exampleButtonPressed:" destination="-1" eventType="touchUpInside" id="kAY-1r-2aF"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -152,13 +152,14 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="278" y="130"/>
         </view>
     </objects>
     <resources>
         <image name="ImportCamera.png" width="74" height="74"/>
         <image name="ImportClipboard.png" width="74" height="74"/>
         <image name="ImportFilmRoll.png" width="74" height="74"/>
-        <image name="in1.jpg" width="1080" height="720"/>
+        <image name="sample1_thumb.jpg" width="60" height="60"/>
         <image name="sample2_thumb.jpg" width="60" height="60"/>
         <image name="sample3_thumb.jpg" width="60" height="60"/>
         <image name="sample5_thumb.jpg" width="60" height="60"/>

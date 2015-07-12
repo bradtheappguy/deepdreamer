@@ -7,8 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMRootViewController">
             <connections>
-                <outlet property="brushButton" destination="Bfr-rE-hG9" id="oFC-lR-Rq1"/>
-                <outlet property="canvasButton" destination="cTT-hq-iUc" id="JX6-8A-iTD"/>
+                <outlet property="animImage" destination="Tuf-vV-7dC" id="oPE-c2-30C"/>
                 <outlet property="canvasContainerView" destination="1eA-Pm-GSQ" id="xPJ-km-I4K"/>
                 <outlet property="heartButton" destination="wOq-qU-op3" id="Yk7-Nj-But"/>
                 <outlet property="imagePickingButton" destination="etk-qm-Ykd" id="mEh-RU-5iP"/>
@@ -22,6 +21,10 @@
             <rect key="frame" x="1" y="0.0" width="574" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-portrait_ipad0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tuf-vV-7dC">
+                    <rect key="frame" x="0.0" y="0.0" width="574" height="1024"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-Pm-GSQ" customClass="IMCanvasContainerView">
                     <rect key="frame" x="0.0" y="0.0" width="574" height="1024"/>
                     <color key="backgroundColor" red="0.96862745100000003" green="0.49019607840000001" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,8 +32,10 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etk-qm-Ykd" userLabel="Camera Button">
                     <rect key="frame" x="0.0" y="980" width="66" height="37"/>
                     <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="0s0-ty-cCj"/>
                         <constraint firstAttribute="width" constant="66" id="5RY-ia-NuQ"/>
                         <constraint firstAttribute="height" constant="37" id="YCl-HK-gZk"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="dH3-6o-2Nx"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" image="icon-camera.png"/>
@@ -48,7 +53,7 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" image="canvas.png"/>
                     <connections>
-                        <action selector="shareButtonPressed:" destination="-1" eventType="touchUpInside" id="LTM-Sx-vt4"/>
+                        <action selector="brushButtonPressed:" destination="-1" eventType="touchUpInside" id="Mzd-YJ-9Fj"/>
                     </connections>
                 </button>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hdn-bE-Bya">
@@ -64,53 +69,40 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfr-rE-hG9">
-                    <rect key="frame" x="75" y="980" width="55" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1w-6F-yJ4">
+                    <rect key="frame" x="237" y="924" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="Qfk-6m-KvW"/>
-                        <constraint firstAttribute="width" constant="55" id="VmE-bd-CCe"/>
+                        <constraint firstAttribute="width" constant="100" id="er4-Tm-N3Q"/>
+                        <constraint firstAttribute="height" constant="100" id="v1j-hR-plo"/>
                     </constraints>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" image="pencil.png">
+                    <state key="normal" image="heart.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="brushButtonPressed:" destination="-1" eventType="touchUpInside" id="p1g-AF-jZq"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTT-hq-iUc">
-                    <rect key="frame" x="143" y="980" width="55" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="55" id="EDk-HQ-BMY"/>
-                        <constraint firstAttribute="height" constant="44" id="vNp-pL-aYT"/>
-                    </constraints>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" image="canvas.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="canvasButtonPressed:" destination="-1" eventType="touchUpInside" id="2Vo-uH-wdw"/>
+                        <action selector="shareButtonPressed:" destination="-1" eventType="touchUpInside" id="QxF-W5-gWS"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cTT-hq-iUc" firstAttribute="top" secondItem="Bfr-rE-hG9" secondAttribute="top" id="6RQ-2n-s9Y"/>
-                <constraint firstItem="cTT-hq-iUc" firstAttribute="leading" secondItem="Bfr-rE-hG9" secondAttribute="trailing" constant="13" id="9S1-Y2-5s5"/>
+                <constraint firstItem="Tuf-vV-7dC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="04t-Dn-REh"/>
+                <constraint firstAttribute="bottom" secondItem="etk-qm-Ykd" secondAttribute="bottom" constant="7" id="0HI-8X-Qxh"/>
                 <constraint firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" constant="2" id="FsH-aK-FXF"/>
-                <constraint firstItem="1eA-Pm-GSQ" firstAttribute="bottom" secondItem="cTT-hq-iUc" secondAttribute="bottom" id="KQH-Kb-Yqi"/>
+                <constraint firstItem="etk-qm-Ykd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KtL-hn-lNn"/>
+                <constraint firstAttribute="trailing" secondItem="Tuf-vV-7dC" secondAttribute="trailing" id="NMA-2J-QIo"/>
                 <constraint firstAttribute="bottom" secondItem="wOq-qU-op3" secondAttribute="bottom" constant="1" id="TR0-1g-T2N"/>
+                <constraint firstItem="Tuf-vV-7dC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZMy-y5-sDH"/>
+                <constraint firstAttribute="bottom" secondItem="1eA-Pm-GSQ" secondAttribute="bottom" id="ae6-Um-tDl"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="etk-qm-Ykd" secondAttribute="leading" id="aiq-BY-I4a"/>
-                <constraint firstItem="etk-qm-Ykd" firstAttribute="top" secondItem="Bfr-rE-hG9" secondAttribute="top" id="dli-kE-JcE"/>
+                <constraint firstAttribute="bottom" secondItem="j1w-6F-yJ4" secondAttribute="bottom" id="b3C-NW-pNv"/>
+                <constraint firstAttribute="bottom" secondItem="Tuf-vV-7dC" secondAttribute="bottom" id="bSc-UU-kk1"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" constant="2" id="iCS-Pp-kQy"/>
-                <constraint firstItem="Bfr-rE-hG9" firstAttribute="baseline" secondItem="cTT-hq-iUc" secondAttribute="baseline" id="jlE-hU-pDe"/>
                 <constraint firstItem="zBQ-jv-ZWD" firstAttribute="top" secondItem="Hdn-bE-Bya" secondAttribute="bottom" id="lb3-oz-9bt"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzN-0c-iu3"/>
                 <constraint firstItem="zBQ-jv-ZWD" firstAttribute="centerX" secondItem="Hdn-bE-Bya" secondAttribute="centerX" id="s1A-iB-ghT"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sTL-a5-haM"/>
+                <constraint firstAttribute="centerX" secondItem="j1w-6F-yJ4" secondAttribute="centerX" id="uIs-Yz-I8H"/>
                 <constraint firstAttribute="bottom" secondItem="zBQ-jv-ZWD" secondAttribute="bottom" constant="14" id="uLs-v4-FyL"/>
-                <constraint firstItem="Bfr-rE-hG9" firstAttribute="leading" secondItem="etk-qm-Ykd" secondAttribute="trailing" constant="9" id="ubR-xj-xKi"/>
-                <constraint firstAttribute="bottom" secondItem="Bfr-rE-hG9" secondAttribute="bottom" id="wJB-J9-HvA"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="centerX" secondItem="zBQ-jv-ZWD" secondAttribute="centerX" id="xP7-JX-1nM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -119,8 +111,9 @@
     </objects>
     <resources>
         <image name="canvas.png" width="92" height="94"/>
+        <image name="default-portrait_ipad0.png" width="1536" height="2048"/>
+        <image name="heart.png" width="33" height="42"/>
         <image name="icon-camera.png" width="44" height="37"/>
-        <image name="pencil.png" width="28" height="28"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

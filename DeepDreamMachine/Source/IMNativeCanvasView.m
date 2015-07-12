@@ -17,6 +17,19 @@
 
 @implementation IMNativeCanvasView
 
+-(UIImage *) currentBackgroundImage {
+  return backgroundImageView.image;
+}
+
+- (void) setBackgroundImage:(UIImage *)image {
+  [UIView transitionWithView:backgroundImageView
+                    duration:5.0f
+                     options:UIViewAnimationOptionTransitionCrossDissolve
+                  animations:^{
+                    backgroundImageView.image = image;
+                  } completion:nil];
+  
+}
 - (id)initWithImage:(UIImage *)image presets:(NSString *)presets {
   self = [super initWithFrame:CGRectMake(0, 0, 0, 0) appFolder:@"/"];
   if (self) {
