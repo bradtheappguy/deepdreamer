@@ -33,9 +33,11 @@
                               withStyle:(int)style
                       completionHandler:(void (^)(UIImage *image))completion {
   // 1
-  NSURL *url = [NSURL URLWithString:@"http://"
-                                    @"ec2-52-8-221-11.us-west-1.compute."
-                                    @"amazonaws.com:8888/postImage?effect=1"];
+  NSURL *url = [NSURL
+      URLWithString:
+          [NSString stringWithFormat:
+                        @"http://deepdream.theappguy.guru:8888/dream?effect=%d",
+                        style]];
   NSURLSessionConfiguration *config =
       [NSURLSessionConfiguration defaultSessionConfiguration];
   NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
