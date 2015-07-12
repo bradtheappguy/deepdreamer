@@ -20,7 +20,12 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     var input: PHContentEditingInput?
     var styleSelected: Int?
     
-    let testButton = ParameterSelectionObject(imageName: "testImage", style: 1)
+    let button1 = ParameterSelectionObject(imageName: "testImage", style: 1)
+    let button2 = ParameterSelectionObject(imageName: "", style: 2)
+    let button3 = ParameterSelectionObject(imageName: "", style: 3)
+    let button4 = ParameterSelectionObject(imageName: "", style: 4)
+    let button5 = ParameterSelectionObject(imageName: "", style: 5)
+    let button6 = ParameterSelectionObject(imageName: "", style: 6)
     
     let robotLoadingImage1 = UIImage(named: "RobotLoadingFrame1")
     let robotLoadingImage2 = UIImage(named: "RobotLoadingFrame2")
@@ -36,9 +41,9 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        parameterSelectionObjects.append(testButton)
+        parameterSelectionObjects = [button1, button2, button3, button4, button5, button6]
         
-        //thoughtBubble.collectionView.reloadData()
+        collectionView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
