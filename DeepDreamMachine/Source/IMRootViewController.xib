@@ -56,6 +56,19 @@
                         <action selector="brushButtonPressed:" destination="-1" eventType="touchUpInside" id="Mzd-YJ-9Fj"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1w-6F-yJ4" userLabel="XXXX">
+                    <rect key="frame" x="472" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="7jt-VK-xmt"/>
+                        <constraint firstAttribute="height" constant="100" id="rgE-PA-yGy"/>
+                    </constraints>
+                    <state key="normal" image="heart.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareButtonPressed:" destination="-1" eventType="touchUpInside" id="QxF-W5-gWS"/>
+                    </connections>
+                </button>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hdn-bE-Bya">
                     <rect key="frame" x="212" y="996" width="150" height="2"/>
                     <color key="tintColor" red="0.15294118230000001" green="0.59607845540000004" blue="0.074509806930000005" alpha="1" colorSpace="deviceRGB"/>
@@ -69,39 +82,26 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1w-6F-yJ4">
-                    <rect key="frame" x="237" y="924" width="100" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="er4-Tm-N3Q"/>
-                        <constraint firstAttribute="height" constant="100" id="v1j-hR-plo"/>
-                    </constraints>
-                    <state key="normal" image="heart.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="shareButtonPressed:" destination="-1" eventType="touchUpInside" id="QxF-W5-gWS"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Tuf-vV-7dC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="04t-Dn-REh"/>
                 <constraint firstAttribute="bottom" secondItem="etk-qm-Ykd" secondAttribute="bottom" constant="7" id="0HI-8X-Qxh"/>
+                <constraint firstItem="j1w-6F-yJ4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1gE-V9-eJQ"/>
                 <constraint firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" constant="2" id="FsH-aK-FXF"/>
                 <constraint firstItem="etk-qm-Ykd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KtL-hn-lNn"/>
                 <constraint firstAttribute="trailing" secondItem="Tuf-vV-7dC" secondAttribute="trailing" id="NMA-2J-QIo"/>
+                <constraint firstAttribute="trailing" secondItem="j1w-6F-yJ4" secondAttribute="trailing" constant="2" id="RU9-F9-jLY"/>
                 <constraint firstAttribute="bottom" secondItem="wOq-qU-op3" secondAttribute="bottom" constant="1" id="TR0-1g-T2N"/>
                 <constraint firstItem="Tuf-vV-7dC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZMy-y5-sDH"/>
                 <constraint firstAttribute="bottom" secondItem="1eA-Pm-GSQ" secondAttribute="bottom" id="ae6-Um-tDl"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="etk-qm-Ykd" secondAttribute="leading" id="aiq-BY-I4a"/>
-                <constraint firstAttribute="bottom" secondItem="j1w-6F-yJ4" secondAttribute="bottom" id="b3C-NW-pNv"/>
                 <constraint firstAttribute="bottom" secondItem="Tuf-vV-7dC" secondAttribute="bottom" id="bSc-UU-kk1"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="trailing" secondItem="wOq-qU-op3" secondAttribute="trailing" constant="2" id="iCS-Pp-kQy"/>
                 <constraint firstItem="zBQ-jv-ZWD" firstAttribute="top" secondItem="Hdn-bE-Bya" secondAttribute="bottom" id="lb3-oz-9bt"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzN-0c-iu3"/>
                 <constraint firstItem="zBQ-jv-ZWD" firstAttribute="centerX" secondItem="Hdn-bE-Bya" secondAttribute="centerX" id="s1A-iB-ghT"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sTL-a5-haM"/>
-                <constraint firstAttribute="centerX" secondItem="j1w-6F-yJ4" secondAttribute="centerX" id="uIs-Yz-I8H"/>
                 <constraint firstAttribute="bottom" secondItem="zBQ-jv-ZWD" secondAttribute="bottom" constant="14" id="uLs-v4-FyL"/>
                 <constraint firstItem="1eA-Pm-GSQ" firstAttribute="centerX" secondItem="zBQ-jv-ZWD" secondAttribute="centerX" id="xP7-JX-1nM"/>
             </constraints>
