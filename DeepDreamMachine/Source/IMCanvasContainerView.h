@@ -31,7 +31,7 @@
 - (void) pause;
 - (void) resume;
 
--(void) capturePaintingWithCompletionHandeler:(void (^)(IMPainting *painting))completion;
+-(void) capturePaintingWithCompletionHandeler:(void (^)(UIImage *painting))completion;
 
 
 -(void) setBackgroundImageAlpha:(CGFloat)alpha;

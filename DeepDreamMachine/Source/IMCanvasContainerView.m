@@ -72,7 +72,7 @@
   return [self.canvasView renderedPainting];
 }
 
--(void) capturePaintingWithCompletionHandeler:(void (^)(IMPainting *painting))completion {
+-(void) capturePaintingWithCompletionHandeler:(void (^)(UIImage *painting))completion {
   [self.canvasView capturePaintingWithCompletionHandeler:completion];
 }
 

@@ -39,7 +39,7 @@ typedef void(^MyCustomBlock)(IMPainting *painting);
 - (id)initWithImage:(UIImage *)image presets:(NSString *)presets;
 
 - (id)initWithImageURL:(NSURL *)url presets:(NSString *)presets;
-- (void) capturePaintingWithCompletionHandeler:(void (^)(IMPainting *painting))completion;
+- (void) capturePaintingWithCompletionHandeler:(void (^)(UIImage *painting))completion;
 
 - (void) updateAttribute:(NSString *)attributeName toNewValue:(NSNumber *)value;
 

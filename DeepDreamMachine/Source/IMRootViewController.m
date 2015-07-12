@@ -476,6 +476,7 @@ static UINavigationController *nav2;
       [self.canvasContainerView setBackgroundImage:image];
     });
   }];
+  [self dismissPopoverAndModalViewControllers];
 }
 
 - (void)brushPickerDidCancel:(IMBrushPickerViewController *)picker {
@@ -541,14 +542,14 @@ static UINavigationController *nav2;
 #pragma mark -
 #pragma mark CApturing and Uploading
 - (void)capturePaintingAndBlockAndPerformWithoutUpload:
-    (void (^)(IMPainting *painting))action {
+    (void (^)(UIImage *painting))action {
   [self dismissPopoverAndModalViewControllers];
   [UIView animateWithDuration:0.33f
                    animations:^(void) {
                      [self.heartButton setAlpha:0];
                    }];
   [self.canvasContainerView
-      capturePaintingWithCompletionHandeler:^(IMPainting *painting) {
+      capturePaintingWithCompletionHandeler:^(UIImage *painting) {
         action(painting);
         [UIView animateWithDuration:0.33f
                          animations:^(void) {
@@ -558,11 +559,11 @@ static UINavigationController *nav2;
 }
 
 - (void)capturePaintingAndBlockAndPerform:
-    (void (^)(IMPainting *painting))action {
+    (void (^)(UIImage *painting))action {
 #if DONT_UPLOAD_BEFORE_SHARING
   [self capturePaintingAndBlockAndPerformWithoutUpload:action];
 #else
-  [self capturePaintingAndBlockAndPerformWithoutUpload:^(IMPainting *painting) {
+  [self capturePaintingAndBlockAndPerformWithoutUpload:^(UIImage *painting) {
     [self.canvasContainerView
         showProgressHUDWithString:NSLocalizedString(@"UPLOADING", nil)];
     [_networkManager uploadPainting:painting
@@ -602,16 +603,16 @@ static UINavigationController *nav2;
 
 #pragma mark Sharing Delegate
 - (void)emailButtonPressed:(id)sender {
-  [self capturePaintingAndBlockAndPerform:^(IMPainting *painting) {
-    UIImage *image = [painting capturedImage];
+  [self capturePaintingAndBlockAndPerform:^(UIImage *painting) {
+    UIImage *image = painting;
 
     MFMailComposeViewController *vc =
         [[MFMailComposeViewController alloc] init];
     if ([[vc class] canSendMail]) {
       [vc setSubject:NSLocalizedString(@"EMAIL_SHARING_SUBJECT", nil)];
       NSString *link =
-          [NSString stringWithFormat:@"<a href=\"%@\">%@</a>", painting.postURL,
-                                     painting.postURL];
+          [NSString stringWithFormat:@"<a href=\"%@\">%@</a>", @"",
+                                     @""];
       NSString *body = [NSString
           stringWithFormat:NSLocalizedString(@"EMAIL_SHARING_HTML_{LINK}", nil),
                            link];
@@ -640,11 +641,11 @@ static UINavigationController *nav2;
 }
 
 - (void)openInButtonPressed:(id)sender {
-  [self capturePaintingAndBlockAndPerformWithoutUpload:^(IMPainting *painting) {
+  [self capturePaintingAndBlockAndPerformWithoutUpload:^(UIImage *painting) {
 
     NSString *text = NSLocalizedString(@"APP_SHARING_TEXT", nil);
     // NSURL *url = [NSURL URLWithString:painting.postURL];
-    UIImage *image = painting.capturedImage;
+    UIImage *image = painting;
     if (YES) {
       UIActivityViewController *controller = [[UIActivityViewController alloc]
           initWithActivityItems:@[ text, image ]
@@ -683,8 +684,8 @@ static UINavigationController *nav2;
 - (void)saveToPhotosButtonPressed:(id)sender {
   [self.canvasContainerView
       showProgressHUDWithString:NSLocalizedString(@"Saving...", nil)];
-  [self capturePaintingAndBlockAndPerformWithoutUpload:^(IMPainting *painting) {
-    UIImageWriteToSavedPhotosAlbum(painting.capturedImage, self,
+  [self capturePaintingAndBlockAndPerformWithoutUpload:^(UIImage *painting) {
+    UIImageWriteToSavedPhotosAlbum(painting, self,
                                    @selector(thisImage:
                                        hasBeenSavedInPhotoAlbumWithError:
                                                         usingContextInfo:),
@@ -695,12 +696,12 @@ static UINavigationController *nav2;
 - (void)copyButtonPressed:(id)sender {
   [self.canvasContainerView
       showProgressHUDWithString:NSLocalizedString(@"Copying...", nil)];
-  [self capturePaintingAndBlockAndPerformWithoutUpload:^(IMPainting *painting) {
-    if (painting.postURL) {
-      [[UIPasteboard generalPasteboard] setString:painting.postURL];
+  [self capturePaintingAndBlockAndPerformWithoutUpload:^(UIImage *painting) {
+    if (NO) {
+      //[[UIPasteboard generalPasteboard] setString:painting.postURL];
     }
-    if (painting.capturedImage) {
-      [[UIPasteboard generalPasteboard] setImage:painting.capturedImage];
+    if (painting) {
+      [[UIPasteboard generalPasteboard] setImage:painting];
     }
     [self performSelector:@selector(copyDidFinish)
                withObject:nil
@@ -709,8 +710,8 @@ static UINavigationController *nav2;
 }
 
 - (void)postCardButtonPressed:(id)sender {
-  [self capturePaintingAndBlockAndPerformWithoutUpload:^(IMPainting *painting) {
-    UIImage *i = [painting capturedImage];
+  [self capturePaintingAndBlockAndPerformWithoutUpload:^(UIImage *painting) {
+    UIImage *i = painting;
     SYSincerelyController *controller = [[SYSincerelyController alloc]
         initWithImages:@[ i ]
                product:SYProductTypePostcard
@@ -721,7 +722,7 @@ static UINavigationController *nav2;
 }
 
 - (void)facebookButtonPressed:(id)sender {
-  [self capturePaintingAndBlockAndPerform:^(IMPainting *painting) {
+  [self capturePaintingAndBlockAndPerform:^(UIImage *painting) {
     SLComposeViewController *composeViewController = [SLComposeViewController
         composeViewControllerForServiceType:SLServiceTypeFacebook];
     [composeViewController
@@ -730,7 +731,7 @@ static UINavigationController *nav2;
     NSURL *url = [NSURL URLWithString:painting.postURL];
     [composeViewController addURL:url];
 #endif
-    [composeViewController addImage:[painting capturedImage]];
+    [composeViewController addImage:painting];
 
     [self presentViewController:composeViewController
                        animated:YES
@@ -748,10 +749,10 @@ static UINavigationController *nav2;
       [self dismissPopoverAndModalViewControllers];
     }];
   } else {
-    [self capturePaintingAndBlockAndPerform:^(IMPainting *painting) {
-      painting.croppedImage = sender;
+    [self capturePaintingAndBlockAndPerform:^(UIImage *painting) {
+      //painting.croppedImage = sender;
       interactionController = [self.crossAppSharingController
-          interactionControllerWithPainting:painting];
+          interactionControllerWithIMAGE:painting croppedImage:sender];
       interactionController.delegate = self;
       [interactionController presentOpenInMenuFromRect:self.heartButton.frame
                                                 inView:self.view
@@ -771,9 +772,9 @@ static UINavigationController *nav2;
       [self dismissPopoverAndModalViewControllers];
     }];
   } else {
-    [self capturePaintingAndBlockAndPerform:^(IMPainting *painting) {
+    [self capturePaintingAndBlockAndPerform:^(UIImage *painting) {
       interactionController = [self.crossAppSharingController
-          interactionControllerWithPainting:painting];
+          interactionControllerWithIMAGE:painting croppedImage:painting];
       interactionController.delegate = self;
       [interactionController presentOpenInMenuFromRect:self.heartButton.frame
                                                 inView:self.view
@@ -783,7 +784,7 @@ static UINavigationController *nav2;
 }
 
 - (void)twitterButtonPressed:(id)sender {
-  [self capturePaintingAndBlockAndPerform:^(IMPainting *painting) {
+  [self capturePaintingAndBlockAndPerform:^(UIImage *painting) {
     SLComposeViewController *composeViewController = [SLComposeViewController
         composeViewControllerForServiceType:SLServiceTypeTwitter];
     [composeViewController
@@ -792,7 +793,7 @@ static UINavigationController *nav2;
     NSURL *url = [NSURL URLWithString:painting.postURL];
     [composeViewController addURL:url];
 #endif
-    [composeViewController addImage:[painting capturedImage]];
+    [composeViewController addImage:painting];
     [self presentViewController:composeViewController
                        animated:YES
                      completion:nil];
@@ -840,8 +841,8 @@ static UINavigationController *nav2;
   cropViewController.delegate = sharingViewController;
 
   [self.canvasContainerView
-      capturePaintingWithCompletionHandeler:^(IMPainting *painting) {
-        cropViewController.cropImage = [painting capturedImage];
+      capturePaintingWithCompletionHandeler:^(UIImage *painting) {
+        cropViewController.cropImage = painting;
         [sharingViewController.navigationController
             pushViewController:cropViewController
                       animated:YES_PLEASE];

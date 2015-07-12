@@ -98,10 +98,10 @@
 }
 
 
--(UIDocumentInteractionController *)interactionControllerWithPainting:(IMPainting *)painting {
+-(UIDocumentInteractionController *)interactionControllerWithIMAGE:(UIImage *)image croppedImage:(UIImage *)croppedImage {
   if (_serviceType == CrossAppSharingTypeInstagram) {
     NSString *jpgPath=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/impressionist.igo"];
-    [UIImageJPEGRepresentation(painting.croppedImage, 1.0) writeToFile:jpgPath atomically:YES];
+    [UIImageJPEGRepresentation(croppedImage, 1.0) writeToFile:jpgPath atomically:YES];
     NSURL *igImageHookFile = [[NSURL alloc] initWithString:[[NSString alloc] initWithFormat:@"file://%@",jpgPath]];
     if (!igImageHookFile) {
       return nil;
@@ -113,11 +113,11 @@
   }
   if (_serviceType == CrossAppSharingTypeTumblr) {
     NSString *jpgPath=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/impressionist.tumblrphoto"];
-    [UIImageJPEGRepresentation(painting.capturedImage, 1.0) writeToFile:jpgPath atomically:YES];
+    [UIImageJPEGRepresentation(image, 1.0) writeToFile:jpgPath atomically:YES];
     NSURL *jpegFile = [[NSURL alloc] initWithString:[[NSString alloc] initWithFormat:@"file://%@",jpgPath]];
     UIDocumentInteractionController *interactionController = [UIDocumentInteractionController interactionControllerWithURL: jpegFile];
     interactionController.UTI = @"com.tumblr.photo";
-    NSString *text = [NSString stringWithFormat:NSLocalizedString(@"TUMBLR_SHARING_TEXT_{URL}", nil),painting.postURL];
+    NSString *text = [NSString stringWithFormat:NSLocalizedString(@"TUMBLR_SHARING_TEXT_{URL}", nil),@""];
     interactionController.annotation = @{@"TumblrCaption": text, @"TumblrTags": @[@"Impressionist"]};
     return interactionController;
   }

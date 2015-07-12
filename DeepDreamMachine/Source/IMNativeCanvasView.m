@@ -95,10 +95,8 @@
 }
 
 - (void)capturePaintingWithCompletionHandeler:
-    (void (^)(IMPainting *painting))completion {
-  self.customBlock = completion;
-  //[self evaluateScript:@"AppContext.pause();"];
-  [self evaluateScript:@"AppContext.exportRenderedImage('image/png', 2);"];
+    (void (^)(UIImage *painting))completion {
+  completion(backgroundImageView.image);
 }
 
 - (IMPainting *)renderedPainting {

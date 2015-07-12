@@ -31,6 +31,5 @@ typedef NS_ENUM(NSInteger, CrossAppSharingType) {
 - (id) initWithServiceType:(CrossAppSharingType)type;
 
 - (void) promptUserToInstallAppUsingViewController:(UIViewController *)vc completion:(void(^)(BOOL canceled))completionHandler;
-- (UIDocumentInteractionController *)interactionControllerWithPainting:(IMPainting *)painting;
-
+-(UIDocumentInteractionController *)interactionControllerWithIMAGE:(UIImage *)image croppedImage:(UIImage *)croppedImage;
 @end
