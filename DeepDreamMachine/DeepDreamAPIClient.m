@@ -7,6 +7,7 @@
 //
 
 #import "DeepDreamAPIClient.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation DeepDreamAPIClient
 
@@ -40,6 +41,36 @@
   [self performSelector:@selector(MOCKRESPONSE:)
              withObject:completion
              afterDelay:2];
+  image = [UIImage imageNamed:@"in1.jpg"];
+
+  // 1
+  NSURL *url =
+      [NSURL URLWithString:@"http://" @"ec2-52-8-221-11.us-west-1.compute."
+             @"amazonaws.com:8888/postImage"];
+  NSURLSessionConfiguration *config =
+      [NSURLSessionConfiguration defaultSessionConfiguration];
+  NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+
+  // 2
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+  request.HTTPMethod = @"POST";
+
+  // 3d
+  NSData *data = UIImageJPEGRepresentation(image, 0.8);
+
+  if (data) {
+    // 4
+    NSURLSessionUploadTask *uploadTask =
+        [session uploadTaskWithRequest:request
+                              fromData:data
+                     completionHandler:^(NSData *data, NSURLResponse *response,
+                                         NSError *error) {
+                       NSLog(@"done");
+                     }];
+
+    // 5
+    [uploadTask resume];
+  }
 }
 
 @end

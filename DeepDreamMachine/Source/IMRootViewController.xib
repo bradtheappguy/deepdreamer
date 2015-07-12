@@ -28,9 +28,9 @@
                     <color key="backgroundColor" red="0.96862745100000003" green="0.49019607840000001" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etk-qm-Ykd" userLabel="Camera Button">
-                    <rect key="frame" x="0.0" y="980" width="44" height="37"/>
+                    <rect key="frame" x="0.0" y="980" width="66" height="37"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="44" id="5RY-ia-NuQ"/>
+                        <constraint firstAttribute="width" constant="66" id="5RY-ia-NuQ"/>
                         <constraint firstAttribute="height" constant="37" id="YCl-HK-gZk"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,10 +40,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-qU-op3" userLabel="Share Button">
-                    <rect key="frame" x="541" y="979" width="33" height="44"/>
+                    <rect key="frame" x="521" y="979" width="53" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="jmP-C5-hTO"/>
-                        <constraint firstAttribute="width" constant="33" id="uen-cD-l02"/>
+                        <constraint firstAttribute="width" constant="53" id="uen-cD-l02"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="z5w-LG-3nJ"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,7 +180,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfr-rE-hG9">
-                    <rect key="frame" x="53" y="980" width="55" height="44"/>
+                    <rect key="frame" x="75" y="980" width="55" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Qfk-6m-KvW"/>
                         <constraint firstAttribute="width" constant="55" id="VmE-bd-CCe"/>
@@ -194,7 +194,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTT-hq-iUc">
-                    <rect key="frame" x="121" y="980" width="55" height="44"/>
+                    <rect key="frame" x="143" y="980" width="55" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="55" id="EDk-HQ-BMY"/>
                         <constraint firstAttribute="height" constant="44" id="vNp-pL-aYT"/>
@@ -208,7 +208,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWX-DO-NBO" userLabel="Settings Button">
-                    <rect key="frame" x="483" y="979" width="50" height="44"/>
+                    <rect key="frame" x="463" y="979" width="50" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="5mb-ET-1lD"/>
                         <constraint firstAttribute="width" constant="50" id="rGO-JK-M04"/>

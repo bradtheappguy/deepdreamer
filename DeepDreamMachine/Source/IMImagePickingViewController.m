@@ -9,15 +9,29 @@
 #import "IMImagePickingViewController.h"
 #import "IMRootViewController.h"
 
-@interface IMImagePickingViewController ()
+@interface IMImagePickingViewController () {
+  UIImageView *backgroundImage;
+}
 
 @property(nonatomic, weak) IBOutlet UIButton *pasteButton;
 @property(weak, nonatomic) IBOutlet UIButton *example1Button;
 @property(weak, nonatomic) IBOutlet UIButton *example2Button;
 @property(weak, nonatomic) IBOutlet UIButton *example3Button;
 
+@property(weak, nonatomic) IBOutlet UIView *viewToMask;
+
 - (void)updatePasteboardButton;
 
+@end
+
+@interface IMImagePickingViewControllerView : UIView
+@end
+
+@implementation IMImagePickingViewControllerView
+
+- (void)awakeFromNib {
+  [super awakeFromNib];
+}
 @end
 
 @implementation IMImagePickingViewController
@@ -54,7 +68,22 @@
       setContentMode:UIViewContentModeScaleAspectFit];
   [self.example3Button.imageView
       setContentMode:UIViewContentModeScaleAspectFit];
-  self.preferredContentSize = CGSizeMake(320, 480);
+  self.preferredContentSize = CGSizeMake(1020 / 2, 780 / 2);
+  self.view.backgroundColor = [UIColor clearColor];
+  backgroundImage = [UIImageView new];
+  backgroundImage.image = [UIImage imageNamed:@"camera-popup"];
+  backgroundImage.frame = self.view.bounds;
+  [self.viewToMask addSubview:backgroundImage];
+  //[self.view sendSubviewToBack:backgroundImage];
+
+  self.viewToMask.backgroundColor = [UIColor redColor];
+  
+  UIImage *_maskingImage = [UIImage imageNamed:@"camera-popup-mask@2x"];
+
+  CALayer *_maskingLayer = [CALayer layer];
+  _maskingLayer.frame = CGRectMake(0, 0, 1020 / 2, 780 / 2);
+  [_maskingLayer setContents:(id)[_maskingImage CGImage]];
+  [self.viewToMask.layer setMask:_maskingLayer];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -63,7 +92,7 @@
   f.size.height = self.view.bounds.size.height - f.origin.y - 5;
   self.topScrollView.frame = f;
   self.topScrollView.showsVerticalScrollIndicator = 1;
-  self.topScrollView.contentSize = CGSizeMake(320, 400);
+  self.topScrollView.contentSize = CGSizeMake(1020 / 2, 780 / 2);
 }
 
 - (void)dealloc {
