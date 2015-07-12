@@ -94,6 +94,14 @@
   [progessHUD setLabelText:notification.object];
 }
 
+- (UIImage *) currentBackgroundImage {
+  return self.canvasView.currentBackgroundImage;
+}
+
+- (void) setBackgroundImage:(UIImage *)image {
+  [self.canvasView setBackgroundImage:image];
+}
+
 - (void) resetCanvas {
   [self zoomToOne];
   [self.canvasView resetCanvas];

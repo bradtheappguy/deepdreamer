@@ -152,14 +152,7 @@
 }
 
 -(IBAction)actionButtonPressed:(UIButton  *)sender {
-  [_selectedBrush save];
-  if (self.segmentedControl.selectedSegmentIndex == 0) {
-    [self.delegate brushPicker:self didSelectBrush:_selectedBrush];
-  }
-  else {
     [self.delegate brushPicker:self didSelectSequence:_selectedSequence];
-  }
-
 }
 
 -(IBAction)segmentedControlValueDidChange:(UISegmentedControl *)sender {

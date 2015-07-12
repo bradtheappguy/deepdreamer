@@ -32,6 +32,10 @@ typedef void(^MyCustomBlock)(IMPainting *painting);
 
 - (void) resetCanvas;
 
+-(UIImage *) currentBackgroundImage;
+- (void) setBackgroundImage:(UIImage *)image;
+
+
 - (id)initWithImage:(UIImage *)image presets:(NSString *)presets;
 
 - (id)initWithImageURL:(NSURL *)url presets:(NSString *)presets;

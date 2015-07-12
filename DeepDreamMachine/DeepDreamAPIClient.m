@@ -7,6 +7,7 @@
 //
 #import "DeepDreamAPIClient.h"
 //#import <AFNetworking/AFNetworking.h>
+#import "UIImage+Resize.h"
 
 @implementation DeepDreamAPIClient
 
@@ -36,33 +37,51 @@
   NSURL *url = [NSURL
       URLWithString:
           [NSString stringWithFormat:
-                        @"http://deepdream.theappguy.guru:8888/dream?effect=%d",
+                        @"http://deepdream.theappguy.guru/dream?effect=%d",
                         style]];
-  NSURLSessionConfiguration *config =
-      [NSURLSessionConfiguration defaultSessionConfiguration];
-  NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+  
+  image = [image resizedImage:CGSizeMake(256, 256) interpolationQuality:kCGInterpolationHigh];
+  NSData *imageData = UIImageJPEGRepresentation(image, 0.75);
+  
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+  [request setHTTPMethod:@"POST"];
+  NSString *boundary = @"YOUR_BOUNDARY_STRING";
+  NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+  [request addValue:contentType forHTTPHeaderField:@"Content-Type"];
+  
+  NSMutableData *body = [NSMutableData data];
 
-  // 2
-  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-  request.HTTPMethod = @"POST";
+  [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+  [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"image.jpg\"\r\n", @"file"] dataUsingEncoding:NSUTF8StringEncoding]];
+  [body appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+  [body appendData:imageData];
+  [body appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
 
-  // 3d
-  NSData *data = UIImageJPEGRepresentation(image, 0.8);
-  if (data) {
-    // 4
-    NSURLSessionUploadTask *uploadTask =
-        [session uploadTaskWithRequest:request
-                              fromData:data
-                     completionHandler:^(NSData *data, NSURLResponse *response,
-                                         NSError *error) {
-                       UIImage *imageToReturn =
-                           [[UIImage alloc] initWithData:data];
-                       completion(imageToReturn);
-                     }];
 
-    // 5
-    [uploadTask resume];
-  }
+  [body appendData:[[NSString stringWithFormat:@"--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+// setting the body of the post to the reqeust
+[request setHTTPBody:body];
+
+  //set up the network session
+  NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+  sessionConfiguration.timeoutIntervalForRequest = 240.0;
+  NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+  NSURLSessionDataTask *uploadTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    if (error){
+      NSLog(@"error: @%@",error);
+    }else{
+      UIImage *responseImge  = [UIImage imageWithData:data];
+      if (responseImge) {
+        completion(responseImge);
+      }
+    }
+    // Process the response
+  }];
+  [uploadTask resume];
+
+  
+
 }
 
 @end

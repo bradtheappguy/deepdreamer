@@ -31,6 +31,7 @@
 #import "IMCanvasPickerViewController.h"
 #import "ScaleAnimation.h"
 #import "IMBrush.h"
+#import "DeepDreamAPIClient.h"
 
 @interface IMRootViewController ()<
     MFMailComposeViewControllerDelegate, IMSharingViewControllerDelegate,
@@ -447,12 +448,12 @@ static UINavigationController *nav2;
   [self dismissPopoverAndModalViewControllers];
 }
 
-- (void)brushPicker:(IMBrushPickerViewController *)picker
-  didSelectSequence:(IMSequence *)sequence {
-  [self.canvasContainerView resetCanvas];
-  NSString *json = [sequence json];
-  [self.canvasContainerView setSequence:json];
-  [self dismissPopoverAndModalViewControllers];
+- (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(IMSequence *)sequence {
+  UIImage *image = [self.canvasContainerView currentBackgroundImage];
+  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:1 completionHandler:^(UIImage *image){
+    [self.canvasContainerView setBackgroundImage:image];
+  }];
+  ;
 }
 
 - (void)brushPickerDidCancel:(IMBrushPickerViewController *)picker {

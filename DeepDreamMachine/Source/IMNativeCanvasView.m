@@ -17,6 +17,13 @@
 
 @implementation IMNativeCanvasView
 
+-(UIImage *) currentBackgroundImage {
+  return backgroundImageView.image;
+}
+
+- (void) setBackgroundImage:(UIImage *)image {
+  backgroundImageView.image = image;
+}
 - (id)initWithImage:(UIImage *)image presets:(NSString *)presets {
   self = [super initWithFrame:CGRectMake(0, 0, 0, 0) appFolder:@"/"];
   if (self) {
