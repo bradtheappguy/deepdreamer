@@ -32,6 +32,7 @@
 #import "ScaleAnimation.h"
 #import "IMBrush.h"
 #import "DeepDreamAPIClient.h"
+#import "IMUndimmedPopoverBackgroundView.h"
 
 @interface IMRootViewController ()<
     MFMailComposeViewControllerDelegate, IMSharingViewControllerDelegate,
@@ -187,6 +188,7 @@
   if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
+    self.popover.popoverBackgroundViewClass = [IMUndimmedPopoverBackgroundView class];
     self.popover.backgroundColor = [UIColor clearColor];
     self.popover.delegate = self;
     presentedpopoverButton = sender;

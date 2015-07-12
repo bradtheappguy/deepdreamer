@@ -133,6 +133,7 @@
 		A2D1FF7F197DE5070076AFCF /* IMCanvasPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D1FF7D197DE5070076AFCF /* IMCanvasPickerViewController.xib */; };
 		A2D1FF82197DEEF40076AFCF /* IMSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D1FF81197DEEF40076AFCF /* IMSequence.m */; };
 		A2D1FF84197DF2EB0076AFCF /* b.json in Resources */ = {isa = PBXBuildFile; fileRef = A2D1FF83197DF2EB0076AFCF /* b.json */; };
+		BC2458221B52E36500CF128F /* IMUndimmedPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2458211B52E36500CF128F /* IMUndimmedPopoverBackgroundView.m */; };
 		C379B3EE197AE76C0036C460 /* ScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C379B3E9197AE76C0036C460 /* ScaleAnimation.m */; };
 		C379B3EF197AE76C0036C460 /* ShuffleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C379B3EB197AE76C0036C460 /* ShuffleAnimation.m */; };
 		C379B3F0197AE76C0036C460 /* SlideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C379B3ED197AE76C0036C460 /* SlideAnimation.m */; };
@@ -461,6 +462,8 @@
 		A2D1FF80197DEEF40076AFCF /* IMSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequence.h; sourceTree = "<group>"; };
 		A2D1FF81197DEEF40076AFCF /* IMSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequence.m; sourceTree = "<group>"; };
 		A2D1FF83197DF2EB0076AFCF /* b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = b.json; sourceTree = "<group>"; };
+		BC2458201B52E36500CF128F /* IMUndimmedPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMUndimmedPopoverBackgroundView.h; sourceTree = "<group>"; };
+		BC2458211B52E36500CF128F /* IMUndimmedPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMUndimmedPopoverBackgroundView.m; sourceTree = "<group>"; };
 		C379B3E8197AE76C0036C460 /* ScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleAnimation.h; sourceTree = "<group>"; };
 		C379B3E9197AE76C0036C460 /* ScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleAnimation.m; sourceTree = "<group>"; };
 		C379B3EA197AE76C0036C460 /* ShuffleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuffleAnimation.h; sourceTree = "<group>"; };
@@ -885,6 +888,8 @@
 				D3A13E861909D62E0060FA88 /* IMImagePickingViewController.h */,
 				D3A13E871909D62E0060FA88 /* IMImagePickingViewController.m */,
 				D3A13E881909D62E0060FA88 /* IMImagePickingViewController.xib */,
+				BC2458201B52E36500CF128F /* IMUndimmedPopoverBackgroundView.h */,
+				BC2458211B52E36500CF128F /* IMUndimmedPopoverBackgroundView.m */,
 			);
 			name = "Image Picker";
 			sourceTree = "<group>";
@@ -1731,6 +1736,7 @@
 				A2BA11461946DA21009FC18D /* EJBindingWindowEvents.m in Sources */,
 				D34E9826190C845E007465F5 /* EJClassLoader.m in Sources */,
 				D34E9806190C845E007465F5 /* EJCanvasContext2DScreen.m in Sources */,
+				BC2458221B52E36500CF128F /* IMUndimmedPopoverBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
