@@ -38,7 +38,7 @@
       URLWithString:
           [NSString stringWithFormat:
                         @"http://deepdream.theappguy.guru/dream?effect=%d",
-                        style]];
+                        style + 1]];
   
   image = [image resizedImage:CGSizeMake(320, 320) interpolationQuality:kCGInterpolationHigh];
   NSData *imageData = UIImageJPEGRepresentation(image, 0.75);

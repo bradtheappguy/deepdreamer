@@ -216,7 +216,9 @@
     self.popover =
         [[UIPopoverController alloc] initWithContentViewController:vc];
     self.popover.backgroundColor = vc.view.backgroundColor;
-        self.popover.backgroundColor = [UIColor clearColor];;
+        self.popover.backgroundColor = [UIColor clearColor];
+    self.popover.popoverBackgroundViewClass = [IMUndimmedPopoverBackgroundView class];
+
     self.popover.delegate = self;
     presentedpopoverButton = sender;
     [self.popover presentPopoverFromRect:sender.frame
