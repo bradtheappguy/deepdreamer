@@ -70,6 +70,9 @@
       setContentMode:UIViewContentModeScaleAspectFit];
   self.preferredContentSize = CGSizeMake(1020 / 2, 780 / 2);
   self.view.backgroundColor = [UIColor clearColor];
+  self.view.layer.opaque = NO;
+  self.view.layer.shadowColor = (__bridge CGColorRef)([UIColor clearColor]);
+
   backgroundImage = [UIImageView new];
   backgroundImage.image = [UIImage imageNamed:@"camera-popup"];
   backgroundImage.frame = self.view.bounds;
@@ -86,13 +89,42 @@
   [self.viewToMask.layer setMask:_maskingLayer];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    UIView *currentSuperView = [[self view] superview];
+    currentSuperView.opaque = NO;
+    currentSuperView.layer.shadowOpacity = 0.0f;
+//    currentSuperView.layer.opacity = 0.0f;
+}
+//
+//    UIView *currentSuperView = [self view];
+//    while (![currentSuperView isKindOfClass:NSClassFromString(@"UITransitionView")] && [currentSuperView superview] != nil) {
+//        currentSuperView = [currentSuperView superview];
+//    }
+//    for (UIView *candidate in [currentSuperView subviews]) {
+//        if ([candidate isKindOfClass:NSClassFromString(@"UIDimmingView")]) {
+//            [candidate setHidden:YES];
+//        }
+//        else if ([candidate isKindOfClass:NSClassFromString(@"_UIPopoverView")]) {
+//            for (UIView *view in [candidate subviews]) {
+//                if ([view isKindOfClass:NSClassFromString(@"_UIPopoverStandardChromeView")]) {
+//                    [view setHidden:YES];
+//                }
+//            }
+//        }
+//    }
+//    
+////    if ([currentView isKindOfClass:NSClassFromString(@"_UIPopoverViewBackgroundComponentView")]) {
+////        [currentView setAlpha:0.0f];
+////    }
+//    
+//}
 - (void)viewDidAppear:(BOOL)animated {
-  //[super viewWillAppear:animated];
-  CGRect f = self.topScrollView.frame;
-  f.size.height = self.view.bounds.size.height - f.origin.y - 5;
-  self.topScrollView.frame = f;
-  self.topScrollView.showsVerticalScrollIndicator = 1;
-  self.topScrollView.contentSize = CGSizeMake(1020 / 2, 780 / 2);
+    //[super viewWillAppear:animated];
+    CGRect f = self.topScrollView.frame;
+    f.size.height = self.view.bounds.size.height - f.origin.y - 5;
+    self.topScrollView.frame = f;
+    self.topScrollView.showsVerticalScrollIndicator = 1;
+    self.topScrollView.contentSize = CGSizeMake(1020 / 2, 780 / 2);
 }
 
 - (void)dealloc {

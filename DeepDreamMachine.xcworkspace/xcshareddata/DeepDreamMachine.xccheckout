@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8457897E-C604-4D87-8055-D54483BF0D49</string>
+	<string>542D03FB-0CE1-402C-A2BD-46220B62F91E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DeepDreamMachine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0A32E5F4C50489A4D6333DB97460F4478C651C44</key>
-		<string>https://github.com/bradtheappguy/deepdreammachine.git</string>
+		<string>github.com:bradtheappguy/deepdreammachine.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DeepDreamMachine.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bradtheappguy/deepdreammachine.git</string>
+	<string>github.com:bradtheappguy/deepdreammachine.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>0A32E5F4C50489A4D6333DB97460F4478C651C44</string>
 			<key>IDESourceControlWCCName</key>
-			<string>deepdreammachine</string>
+			<string>DeepDream-iOS</string>
 		</dict>
 	</array>
 </dict>
