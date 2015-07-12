@@ -53,6 +53,10 @@
 		A271DA021B51EF0000A1CC1A /* camera-popup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */; };
 		A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */; };
 		A271DA0E1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */; };
+		A271DA101B52067C00A1CC1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A271DA0F1B52067C00A1CC1A /* libPods.a */; };
+		A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA111B52100C00A1CC1A /* heart-popup.png */; };
+		A271DA151B52100C00A1CC1A /* dream-popup2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA121B52100C00A1CC1A /* dream-popup2.png */; };
+		A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -325,6 +329,10 @@
 		A271D9F91B51E06F00A1CC1A /* icon-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-camera@2x.png"; sourceTree = "<group>"; };
 		A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-popup@2x.png"; sourceTree = "<group>"; };
 		A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-popup-mask@2x.png"; path = "DeepDreamMachine/Images/camera-popup-mask@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DA0F1B52067C00A1CC1A /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		A271DA111B52100C00A1CC1A /* heart-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-popup.png"; path = "DeepDreamMachine/Images/heart-popup.png"; sourceTree = SOURCE_ROOT; };
+		A271DA121B52100C00A1CC1A /* dream-popup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2.png"; path = "DeepDreamMachine/Images/dream-popup2.png"; sourceTree = SOURCE_ROOT; };
+		A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2@2x.png"; path = "DeepDreamMachine/Images/dream-popup2@2x.png"; sourceTree = SOURCE_ROOT; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -619,6 +627,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A271DA101B52067C00A1CC1A /* libPods.a in Frameworks */,
 				6A010A2D1B51C0C200C88CB6 /* PhotosUI.framework in Frameworks */,
 				6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */,
 			);
@@ -957,6 +966,7 @@
 		D35068CD18F779520058BDA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A271DA0F1B52067C00A1CC1A /* libPods.a */,
 				14D9D6B135B145A0B8EC6485 /* libPods.a */,
 				D3A5EC88190CF78700490588 /* libPods.a */,
 				D3A13E101909D1190060FA88 /* libicucore.dylib */,
@@ -1110,6 +1120,9 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A271DA111B52100C00A1CC1A /* heart-popup.png */,
+				A271DA121B52100C00A1CC1A /* dream-popup2.png */,
+				A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */,
 				A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */,
 				A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */,
 				A271D9F71B51E06F00A1CC1A /* icon-share@2x.png */,
@@ -1326,7 +1339,9 @@
 				D36A874918FA0E2000C1A1B7 /* config.plist in Resources */,
 				D3A13EDC1909D6360060FA88 /* ImportClipboard.png in Resources */,
 				D33423A2190E305C005D3EE6 /* ShareFacebook-style7@2x.png in Resources */,
+				A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */,
 				D33423AF190E307C005D3EE6 /* ShareTwitter-style7.png in Resources */,
+				A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */,
 				A290032F192C5B0900749630 /* sample8_thumb@2x.jpg in Resources */,
 				A2D1FF7F197DE5070076AFCF /* IMCanvasPickerViewController.xib in Resources */,
 				D34E9814190C845E007465F5 /* RadialGradient.fsh in Resources */,
@@ -1419,6 +1434,7 @@
 				A2900326192C5B0900749630 /* sample3.jpg in Resources */,
 				A2900327192C5B0900749630 /* sample4_thumb@2x.jpg in Resources */,
 				A28B21A31963BACF005323D8 /* a.json in Resources */,
+				A271DA151B52100C00A1CC1A /* dream-popup2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1613,6 +1629,10 @@
 				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1636,6 +1656,10 @@
 				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

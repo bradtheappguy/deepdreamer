@@ -76,7 +76,7 @@
   [self.viewToMask addSubview:backgroundImage];
   //[self.view sendSubviewToBack:backgroundImage];
 
-  self.viewToMask.backgroundColor = [UIColor redColor];
+  self.viewToMask.backgroundColor = [UIColor blackColor];
   
   UIImage *_maskingImage = [UIImage imageNamed:@"camera-popup-mask@2x"];
 
