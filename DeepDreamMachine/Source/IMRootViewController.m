@@ -513,7 +513,18 @@ static UINavigationController *nav2;
   else {
     UIWindow *mainWindow = [UIApplication sharedApplication].windows[0];
     robotProgressHUD = [[MBProgressHUD alloc] initWithWindow:mainWindow];
-    robotProgressHUD.labelFont = [UIFont fontWithName:@"futura" size:15];
+    UIImageView *dancingRobot = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    dancingRobot.animationDuration = 1.0;
+    dancingRobot.animationImages = @[
+                                     [UIImage imageNamed:@"dance0"],
+                                     [UIImage imageNamed:@"dance1"]
+                                     ];
+    [dancingRobot startAnimating];
+    dancingRobot.contentMode = UIViewContentModeScaleAspectFit;
+    robotProgressHUD.mode = MBProgressHUDModeCustomView;
+    robotProgressHUD.customView = dancingRobot;
+
+    robotProgressHUD.labelFont = [UIFont fontWithName:@"futura" size:30];
     robotProgressHUD.labelText = @"Dreaming...";
     robotProgressHUD.detailsLabelText = @"This may take a bit";
     robotProgressHUD.userInteractionEnabled = NO;
@@ -679,7 +690,7 @@ static UINavigationController *nav2;
       vc.mailComposeDelegate = self;
       NSData *jpegData = UIImageJPEGRepresentation(image, 1);
 
-      NSString *fileName = @"impressionist";
+      NSString *fileName = @"image";
       fileName = [fileName stringByAppendingPathExtension:@"jpeg"];
       [vc addAttachmentData:jpegData mimeType:@"image/jpeg" fileName:fileName];
 

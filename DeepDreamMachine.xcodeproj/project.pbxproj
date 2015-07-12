@@ -11,7 +11,6 @@
 		6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A010A2E1B51C0C200C88CB6 /* Photos.framework */; };
 		6A010A341B51C0C200C88CB6 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */; };
 		6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */; };
-		6A010A391B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6A010A3F1B51C0E900C88CB6 /* ParameterSelectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */; };
 		6A010A401B51C82D00C88CB6 /* DeepDreamAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */; };
 		6A010A421B51CFC300C88CB6 /* skyline2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A13ECC1909D6360060FA88 /* skyline2.png */; };
@@ -164,8 +163,8 @@
 		A271DBC81B52F65000A1CC1A /* newoutputf6-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271DBC31B52F65000A1CC1A /* newoutputf6-3.jpg */; };
 		A271DBC91B52F65000A1CC1A /* newoutputf6-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271DBC41B52F65000A1CC1A /* newoutputf6-4.jpg */; };
 		A271DBCA1B52F65000A1CC1A /* newoutputf6-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271DBC51B52F65000A1CC1A /* newoutputf6-5.jpg */; };
-		A271DBCD1B5310D300A1CC1A /* dance1.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DBCB1B5310D300A1CC1A /* dance1.png */; };
-		A271DBCE1B5310D300A1CC1A /* dance0.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DBCC1B5310D300A1CC1A /* dance0.png */; };
+		A271DBCD1B5310D300A1CC1A /* dance1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DBCB1B5310D300A1CC1A /* dance1@2x.png */; };
+		A271DBCE1B5310D300A1CC1A /* dance0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DBCC1B5310D300A1CC1A /* dance0@2x.png */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -377,20 +376,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		6A010A3D1B51C0C200C88CB6 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				6A010A391B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		14D9D6B135B145A0B8EC6485 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeepDreamMachinePhotosExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,8 +534,8 @@
 		A271DBC31B52F65000A1CC1A /* newoutputf6-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "newoutputf6-3.jpg"; path = "DeepDreamMachine/Images/newoutputf6-3.jpg"; sourceTree = SOURCE_ROOT; };
 		A271DBC41B52F65000A1CC1A /* newoutputf6-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "newoutputf6-4.jpg"; path = "DeepDreamMachine/Images/newoutputf6-4.jpg"; sourceTree = SOURCE_ROOT; };
 		A271DBC51B52F65000A1CC1A /* newoutputf6-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "newoutputf6-5.jpg"; path = "DeepDreamMachine/Images/newoutputf6-5.jpg"; sourceTree = SOURCE_ROOT; };
-		A271DBCB1B5310D300A1CC1A /* dance1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dance1.png; sourceTree = "<group>"; };
-		A271DBCC1B5310D300A1CC1A /* dance0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dance0.png; sourceTree = "<group>"; };
+		A271DBCB1B5310D300A1CC1A /* dance1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dance1@2x.png"; sourceTree = "<group>"; };
+		A271DBCC1B5310D300A1CC1A /* dance0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dance0@2x.png"; sourceTree = "<group>"; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -1369,8 +1354,8 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				A271DBCB1B5310D300A1CC1A /* dance1.png */,
-				A271DBCC1B5310D300A1CC1A /* dance0.png */,
+				A271DBCB1B5310D300A1CC1A /* dance1@2x.png */,
+				A271DBCC1B5310D300A1CC1A /* dance0@2x.png */,
 				A271DBC11B52F65000A1CC1A /* newoutputf6-1.jpg */,
 				A271DBC21B52F65000A1CC1A /* newoutputf6-2.jpg */,
 				A271DBC31B52F65000A1CC1A /* newoutputf6-3.jpg */,
@@ -1604,7 +1589,6 @@
 				D35068C818F779520058BDA9 /* Frameworks */,
 				D35068C918F779520058BDA9 /* Resources */,
 				3B5F7CAB04A247499F57D639 /* Copy Pods Resources */,
-				6A010A3D1B51C0C200C88CB6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -1708,7 +1692,7 @@
 				D36A874918FA0E2000C1A1B7 /* config.plist in Resources */,
 				A271DB161B52629300A1CC1A /* button-layer-1@2x.png in Resources */,
 				D3A13EDC1909D6360060FA88 /* ImportClipboard.png in Resources */,
-				A271DBCD1B5310D300A1CC1A /* dance1.png in Resources */,
+				A271DBCD1B5310D300A1CC1A /* dance1@2x.png in Resources */,
 				A271DB661B52DBFD00A1CC1A /* sample1-small2.jpg in Resources */,
 				A271DBBB1B52F3CC00A1CC1A /* newoutputf4-2.jpg in Resources */,
 				A271DB241B52629300A1CC1A /* ExportFilmRoll@2x.png in Resources */,
@@ -1764,7 +1748,7 @@
 				A271D9FA1B51E06F00A1CC1A /* icon-share@2x.png in Resources */,
 				D334239B190DD525005D3EE6 /* bg_avatar.png in Resources */,
 				A205069619380DA900D305CA /* attributes.json in Resources */,
-				A271DBCE1B5310D300A1CC1A /* dance0.png in Resources */,
+				A271DBCE1B5310D300A1CC1A /* dance0@2x.png in Resources */,
 				A271DB6F1B52DBFD00A1CC1A /* sample4_end.jpg in Resources */,
 				A271DB211B52629300A1CC1A /* credits.png in Resources */,
 				D3A69D23190F2BB40095627A /* iTunesArtwork.png in Resources */,
@@ -2113,7 +2097,6 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -2261,7 +2244,7 @@
 				CLANG_WARN_ENUM_CONVERSION = NO;
 				CLANG_WARN_INT_CONVERSION = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sears Holdings Management Corp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
