@@ -16,7 +16,7 @@
 @protocol IMBrushPickerViewControllerDelegate <NSObject>
 
 -(void) brushPicker:(IMBrushPickerViewController *)picker didSelectBrush:(IMBrush *)brush;
--(void) brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(IMSequence *)sequence;
+-(void) brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(NSUInteger)sequence;
 -(void) brushPickerDidCancel:(IMBrushPickerViewController *)picker;
 
 -(void) presentBrushEditor;

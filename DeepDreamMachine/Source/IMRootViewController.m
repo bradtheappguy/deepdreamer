@@ -131,7 +131,7 @@
   [self.animImage startAnimating];
   
   [self.canvasContainerView.canvasView removeFromSuperview];
-  self.canvasContainerView.alpha = 0.5;
+  self.canvasContainerView.alpha = 0.0;
   
 }
 
@@ -469,14 +469,13 @@ static UINavigationController *nav2;
   [self dismissPopoverAndModalViewControllers];
 }
 
-- (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(IMSequence *)sequence {
+- (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(NSUInteger)sequence {
   UIImage *image = [self.canvasContainerView currentBackgroundImage];
-  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:1 completionHandler:^(UIImage *image) {
+  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:sequence completionHandler:^(UIImage *image) {
     dispatch_async(dispatch_get_main_queue(), ^(void){
       [self.canvasContainerView setBackgroundImage:image];
     });
   }];
-  ;
 }
 
 - (void)brushPickerDidCancel:(IMBrushPickerViewController *)picker {

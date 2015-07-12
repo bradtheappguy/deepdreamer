@@ -156,7 +156,7 @@
 }
 
 -(IBAction)actionButtonPressed:(UIButton  *)sender {
-    [self.delegate brushPicker:self didSelectSequence:_selectedSequence];
+    [self.delegate brushPicker:self didSelectSequence:sender.tag];
 }
 
 -(IBAction)segmentedControlValueDidChange:(UISegmentedControl *)sender {
