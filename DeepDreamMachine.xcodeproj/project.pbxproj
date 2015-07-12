@@ -82,6 +82,10 @@
 		A271DB271B52629300A1CC1A /* icon-robot.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB111B52629300A1CC1A /* icon-robot.png */; };
 		A271DB281B52629300A1CC1A /* brush_thumbs in Resources */ = {isa = PBXBuildFile; fileRef = A271DB121B52629300A1CC1A /* brush_thumbs */; };
 		A271DB2A1B526A4C00A1CC1A /* formatting.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB291B526A4C00A1CC1A /* formatting.png */; };
+		A271DB2F1B52741C00A1CC1A /* default-portrait_ipad2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */; };
+		A271DB301B52741C00A1CC1A /* default-portrait_ipad1.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */; };
+		A271DB311B52741C00A1CC1A /* default-portrait_ipad0.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */; };
+		A271DB321B52741C00A1CC1A /* default-portrait_ipad3.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -383,6 +387,10 @@
 		A271DB111B52629300A1CC1A /* icon-robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-robot.png"; path = "DeepDreamMachine/Images/icon-robot.png"; sourceTree = SOURCE_ROOT; };
 		A271DB121B52629300A1CC1A /* brush_thumbs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = brush_thumbs; path = DeepDreamMachine/Images/brush_thumbs; sourceTree = SOURCE_ROOT; };
 		A271DB291B526A4C00A1CC1A /* formatting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = formatting.png; path = DeepDreamMachine/Images/formatting.png; sourceTree = SOURCE_ROOT; };
+		A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad2.png"; sourceTree = "<group>"; };
+		A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad1.png"; sourceTree = "<group>"; };
+		A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad0.png"; sourceTree = "<group>"; };
+		A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-portrait_ipad3.png"; sourceTree = "<group>"; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -1187,6 +1195,10 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A271DB2B1B52741C00A1CC1A /* default-portrait_ipad2.png */,
+				A271DB2C1B52741C00A1CC1A /* default-portrait_ipad1.png */,
+				A271DB2D1B52741C00A1CC1A /* default-portrait_ipad0.png */,
+				A271DB2E1B52741C00A1CC1A /* default-portrait_ipad3.png */,
 				A271DB291B526A4C00A1CC1A /* formatting.png */,
 				A271DAFD1B52629300A1CC1A /* button-layer-2.png */,
 				A271DAFE1B52629300A1CC1A /* button-layer-2@2x.png */,
@@ -1422,6 +1434,7 @@
 				D3A13ED01909D6360060FA88 /* camera.png in Resources */,
 				D3A69D29190F444B0095627A /* example_2.png in Resources */,
 				A271DB2A1B526A4C00A1CC1A /* formatting.png in Resources */,
+				A271DB2F1B52741C00A1CC1A /* default-portrait_ipad2.png in Resources */,
 				A271DB221B52629300A1CC1A /* credits@2x.png in Resources */,
 				A271DB1D1B52629300A1CC1A /* button-layer-4.png in Resources */,
 				D3A13EA61909D62E0060FA88 /* IMImagePickingViewController.xib in Resources */,
@@ -1442,6 +1455,7 @@
 				A271DB191B52629300A1CC1A /* button-layer-6.png in Resources */,
 				A271DB251B52629300A1CC1A /* dream-popup.png in Resources */,
 				A271DB261B52629300A1CC1A /* camera-popup.png in Resources */,
+				A271DB301B52741C00A1CC1A /* default-portrait_ipad1.png in Resources */,
 				A271DB281B52629300A1CC1A /* brush_thumbs in Resources */,
 				A271DB1C1B52629300A1CC1A /* button-layer-5@2x.png in Resources */,
 				A290032F192C5B0900749630 /* sample8_thumb@2x.jpg in Resources */,
@@ -1487,6 +1501,7 @@
 				A271DB181B52629300A1CC1A /* app6.png in Resources */,
 				D3A13ECE1909D6360060FA88 /* bg_bar~iPad@2x.png in Resources */,
 				A271DA011B51EF0000A1CC1A /* camera-popup@2x.png in Resources */,
+				A271DB321B52741C00A1CC1A /* default-portrait_ipad3.png in Resources */,
 				D33423AC190E307C005D3EE6 /* ShareSincerely-style7@2x.png in Resources */,
 				D3A13ED11909D6360060FA88 /* camera@2x.png in Resources */,
 				D3F19C5D19033C7800FD5551 /* Settings.storyboard in Resources */,
@@ -1506,6 +1521,7 @@
 				A205069F193814C000D305CA /* IMBooleanAttributeTableViewCell.xib in Resources */,
 				A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */,
 				A271DB1E1B52629300A1CC1A /* button-layer-4@2x.png in Resources */,
+				A271DB311B52741C00A1CC1A /* default-portrait_ipad0.png in Resources */,
 				C3B26A461970B56A001917F5 /* IMBrushPickerViewController.xib in Resources */,
 				D34E9812190C845E007465F5 /* Flat.fsh in Resources */,
 				A271D9E81B51A5C000A1CC1A /* auto.png in Resources */,

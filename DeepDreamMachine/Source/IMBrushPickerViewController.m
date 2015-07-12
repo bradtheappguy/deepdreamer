@@ -43,6 +43,7 @@
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor clearColor];
   self.view.superview.backgroundColor = [UIColor clearColor];
+  self.view.superview.layer.shadowColor = [UIColor clearColor].CGColor;
   self.preferredContentSize = CGSizeMake(510, 513);
 
 #if DEBUG

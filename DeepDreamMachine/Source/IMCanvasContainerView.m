@@ -36,7 +36,8 @@
 - (void) createNewCanvasWithImageURL:(NSURL *)url presets:(NSString *)presets {
   [[NSNotificationCenter defaultCenter] removeObserver:self];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideProgressView) name:@"HIDE_PROGESS_LABEL" object:nil];
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateProgressView:) name:@"UPDATE_PROGESS_LABEL" object:nil];  [self.canvasView removeFromSuperview];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateProgressView:) name:@"UPDATE_PROGESS_LABEL" object:nil];
+  [self.canvasView removeFromSuperview];
   // UIImage *image = [UIImage imageWithContentsOfFile:url.path];
   self.canvasView = [[IMNativeCanvasView alloc] initWithImageURL:url presets:presets];
   self.canvasView.backgroundColor = [UIColor blackColor];
