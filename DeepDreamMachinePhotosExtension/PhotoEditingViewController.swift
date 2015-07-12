@@ -45,6 +45,7 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     let robotLoadingImage1 = UIImage(named: "RobotLoadingFrame1")
     let robotLoadingImage2 = UIImage(named: "RobotLoadingFrame2")
     let robotLoadingImage3 = UIImage(named: "RobotLoadingFrame3")
+    let robotLoadingImage4 = UIImage(named: "RobotLoadingFrame4")
     
     // MARK: - CollectionView properties
     
@@ -143,8 +144,8 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     }
     
     func startLoadingAnimation() {
-        if let image1 = robotLoadingImage1, image2 = robotLoadingImage2, image3 = robotLoadingImage3 {
-            let images = [image1, image2, image3]
+        if let image1 = robotLoadingImage1, image2 = robotLoadingImage2, image3 = robotLoadingImage3, image4 = robotLoadingImage4 {
+            let images = [image1, image2, image3, image4]
             
             robotLoadingAnimationView.hidden = false
             self.robotLoadingAnimationView.animationImages = images
