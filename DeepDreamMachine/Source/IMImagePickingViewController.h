@@ -27,4 +27,7 @@
 @property (nonatomic) IBOutlet UIButton *closeButton;
 @property (weak, nonatomic) IBOutlet UIScrollView *topScrollView;
 @property (weak) id <IMActionViewControllerDelegate> delegate;
+
+@property (nonatomic) NSUInteger indexOfPresetImage;
+ 
 @end

@@ -170,6 +170,9 @@
   NSURL *url = [[NSBundle mainBundle]
       URLForResource:[NSString stringWithFormat:@"sample%d", sender.tag]
        withExtension:@"jpg"];
+  
+  self.indexOfPresetImage = sender.tag;
+  
   [self.delegate picker:self didFinishPickingImageWithURL:url];
   IMRootViewController *rootViewController = (IMRootViewController *)[
       [[[UIApplication sharedApplication] delegate] window] rootViewController];

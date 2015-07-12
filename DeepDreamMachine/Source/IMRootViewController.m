@@ -43,6 +43,8 @@
   UIButton *presentedpopoverButton;
   UIDocumentInteractionController *interactionController;
   ScaleAnimation *_scaleAnimationController;
+      
+      NSUInteger selectedPrestImageIndex;
 }
 
 @property(weak, nonatomic) IBOutlet IMCanvasContainerView *canvasContainerView;
@@ -475,11 +477,41 @@ static UINavigationController *nav2;
 
 - (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(NSUInteger)sequence {
   UIImage *image = [self.canvasContainerView currentBackgroundImage];
-  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:sequence completionHandler:^(UIImage *image) {
-    dispatch_async(dispatch_get_main_queue(), ^(void){
-      [self.canvasContainerView setBackgroundImage:image];
-    });
-  }];
+  
+ 
+  UIImage *newImage;
+  
+  if (selectedPrestImageIndex > 0) {
+    //We are using a preset so we should load an image from the bundle
+    
+    NSString *imageName = [NSString stringWithFormat:@"newoutputf%d-%d.jpg",sequence+1,selectedPrestImageIndex];
+    newImage = [UIImage imageNamed:imageName];
+    
+    if (!newImage) {
+      NSLog(@"WARN: %@ missing",imageName);
+  
+  if (sequence == 0) newImage = [UIImage imageNamed:@"sample1_end.jpg"];
+  if (sequence == 1) newImage = [UIImage imageNamed:@"sample2_end.jpg"];
+  if (sequence == 2) newImage = [UIImage imageNamed:@"sample3_end.jpg"];
+  if (sequence == 3) newImage = [UIImage imageNamed:@"sample4_end.jpg"];
+  if (sequence == 4) newImage = [UIImage imageNamed:@"sample5_end.jpg"];
+  if (sequence == 5) newImage = [UIImage imageNamed:@"sample6_end.jpg"];
+    }
+  
+  if (newImage) {
+    [self.canvasContainerView setBackgroundImage:newImage];
+  }
+    
+  }
+  else {
+    [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:sequence completionHandler:^(UIImage *image) {
+      dispatch_async(dispatch_get_main_queue(), ^(void){
+        [self.canvasContainerView setBackgroundImage:image];
+      });
+    }];
+    
+  }
+  
   [self dismissPopoverAndModalViewControllers];
 }
 
@@ -519,6 +551,9 @@ static UINavigationController *nav2;
 
 - (void)picker:(IMImagePickingViewController *)picker
     didFinishPickingImageWithURL:(NSURL *)url {
+  
+  selectedPrestImageIndex = picker.indexOfPresetImage;
+  
   NSString *json = [[IMBrush currentBrush] json];
   [self.canvasContainerView createNewCanvasWithImageURL:url presets:json];
   [self dismissPopoverAndModalViewControllers];
