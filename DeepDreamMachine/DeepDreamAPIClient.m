@@ -5,12 +5,11 @@
 //  Created by Bradley R Anderson on 7/11/15.
 //  Copyright (c) 2015 Jet. All rights reserved.
 //
-
 #import "DeepDreamAPIClient.h"
 
 @implementation DeepDreamAPIClient
 
-+ (id)sharedClient {
++ (instancetype)sharedClient {
   static DeepDreamAPIClient *sharedClient = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
@@ -19,7 +18,7 @@
   return sharedClient;
 }
 
-- (id)init {
+- (instancetype)init {
   if (self = [super init]) {
   }
   return self;

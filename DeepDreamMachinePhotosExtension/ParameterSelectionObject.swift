@@ -10,6 +10,5 @@ struct ParameterSelectionObject {
     // Name of image to load from the Asset catalog
     let imageName: String
     
-    // Closure to be excecuted when object is tapped
-    let action: () -> ()
+    let style: Int
 }
