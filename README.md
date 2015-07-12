@@ -3,7 +3,7 @@ Deep Dream Machine iOS
 
 All Visual Design, Icons, Art Assets, and other visual elements are Copyright 2015.  No permission to use is granted for any comercial use or derrivitae works.
 
-All souce code, exclusive of any visual assets are released under the temrms of the "MIT License" listed below:
+All souce code, exclusive of any visual assets are released under the terms of the "MIT License" listed below:
 
 
 
