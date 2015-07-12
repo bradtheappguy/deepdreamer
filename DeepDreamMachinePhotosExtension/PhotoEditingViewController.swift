@@ -170,7 +170,7 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
 extension PhotoEditingViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        if let inputImage = self.input?.displaySizeImage {
+        if let inputImage = self.input?.displaySizeImage.getScaledJPEGWithSize(CGRectMake(0, 0, 100, 100)) {
             let object = parameterSelectionObjects[indexPath.row]
 
             let deepDream = DeepDreamAPIClient.sharedClient()

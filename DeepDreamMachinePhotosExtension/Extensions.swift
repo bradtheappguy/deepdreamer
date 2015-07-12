@@ -6,4 +6,19 @@
 //  Copyright (c) 2015 Jet. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIImage {
+    func getScaledJPEGWithSize(rect: CGRect) -> UIImage? {
+        UIGraphicsBeginImageContext(rect.size)
+
+        self.drawInRect(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+
+        let imageData = UIImageJPEGRepresentation(image, 1.0)
+        
+        return UIImage(data: imageData)
+    }
+}

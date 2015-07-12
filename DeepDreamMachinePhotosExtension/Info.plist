@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>DeepDreamMachinePhotosExtension</string>
+	<string>com.arvestad.DeepDreamingMachinePhotosExtension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>guru.thappguy.eepdreammachne.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>com.arvestad.deepdreaming.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
