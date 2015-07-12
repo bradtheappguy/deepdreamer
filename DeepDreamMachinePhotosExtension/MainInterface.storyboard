@@ -17,12 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-4f-29h">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-4f-29h">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-He-te8">
+                                <rect key="frame" x="500" y="0.0" width="320" height="528"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-6y-S6x">
                                 <rect key="frame" x="0.0" y="478" width="320" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Hpm-Af-Km4"/>
                                     <constraint firstAttribute="height" constant="50" id="WjI-zC-mb8"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lVs-C1-Ayy">
@@ -43,20 +47,20 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="ObA-dk-sSI" id="w6Q-U9-kqR"/>
-                                    <outlet property="delegate" destination="ObA-dk-sSI" id="zdM-fK-J96"/>
+                                    <outlet property="dataSource" destination="ObA-dk-sSI" id="yCa-2W-228"/>
+                                    <outlet property="delegate" destination="ObA-dk-sSI" id="VVW-0t-Hp1"/>
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="2Sy-4f-29h" secondAttribute="bottom" id="Mqx-U1-NzJ"/>
-                            <constraint firstItem="2Sy-4f-29h" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-16" id="OPI-8e-tw1"/>
-                            <constraint firstItem="aWa-6y-S6x" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-16" id="R7b-g2-ZVe"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="aWa-6y-S6x" secondAttribute="bottom" id="ZnU-oo-1zO"/>
-                            <constraint firstItem="2Sy-4f-29h" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="topMargin" id="efe-vi-HK8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Sy-4f-29h" secondAttribute="trailing" constant="-16" id="qun-5e-Pdb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aWa-6y-S6x" secondAttribute="trailing" constant="-16" id="sQg-is-fhI"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="aWa-6y-S6x" secondAttribute="bottom" id="37N-gA-2P2"/>
+                            <constraint firstItem="bhb-He-te8" firstAttribute="width" secondItem="zMn-AG-sqS" secondAttribute="width" id="7Dn-Wg-2XJ"/>
+                            <constraint firstItem="aWa-6y-S6x" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-16" id="PBa-ZC-JwJ"/>
+                            <constraint firstAttribute="centerX" secondItem="bhb-He-te8" secondAttribute="centerX" constant="-500" id="a2z-i4-M5v"/>
+                            <constraint firstItem="bhb-He-te8" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="topMargin" id="ej2-I9-pdg"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="bhb-He-te8" secondAttribute="bottom" id="jlE-Aa-fUi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aWa-6y-S6x" secondAttribute="trailing" constant="-16" id="zh7-8A-xvH"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -64,6 +68,8 @@
                     <connections>
                         <outlet property="collectionView" destination="aWa-6y-S6x" id="Psk-JH-Lga"/>
                         <outlet property="imageView" destination="2Sy-4f-29h" id="q8t-PV-xYB"/>
+                        <outlet property="robotCenterConstraint" destination="a2z-i4-M5v" id="2QW-SF-qmI"/>
+                        <outlet property="robotLoadingAnimationView" destination="bhb-He-te8" id="o5m-At-gth"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>

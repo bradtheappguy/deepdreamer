@@ -15,6 +15,7 @@
 		6A010A3F1B51C0E900C88CB6 /* ParameterSelectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */; };
 		6A010A401B51C82D00C88CB6 /* DeepDreamAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */; };
 		6A010A421B51CFC300C88CB6 /* skyline2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A13ECC1909D6360060FA88 /* skyline2.png */; };
+		6A010A4B1B51EECB00C88CB6 /* ExtensionAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A010A4A1B51EECB00C88CB6 /* ExtensionAssets.xcassets */; };
 		A205069619380DA900D305CA /* attributes.json in Resources */ = {isa = PBXBuildFile; fileRef = A205069519380DA900D305CA /* attributes.json */; };
 		A205069A19380E2B00D305CA /* IMPaintingsAttributesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */; };
 		A205069B19380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A205069919380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib */; };
@@ -273,6 +274,7 @@
 		6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterSelectionObject.swift; sourceTree = "<group>"; };
 		6A010A411B51C8FC00C88CB6 /* DeepDreamMachinePhotosExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepDreamMachinePhotosExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A010A4A1B51EECB00C88CB6 /* ExtensionAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionAssets.xcassets; sourceTree = "<group>"; };
 		A205069519380DA900D305CA /* attributes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = attributes.json; sourceTree = "<group>"; };
 		A205069719380E2B00D305CA /* IMPaintingsAttributesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPaintingsAttributesTableViewController.h; sourceTree = "<group>"; };
 		A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPaintingsAttributesTableViewController.m; sourceTree = "<group>"; };
@@ -640,11 +642,12 @@
 		6A010A301B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension */ = {
 			isa = PBXGroup;
 			children = (
+				6A010A441B51EDE100C88CB6 /* Model */,
+				6A010A431B51EDD700C88CB6 /* Controllers */,
 				6A010A411B51C8FC00C88CB6 /* DeepDreamMachinePhotosExtension-Bridging-Header.h */,
-				6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */,
-				6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */,
 				6A010A351B51C0C200C88CB6 /* MainInterface.storyboard */,
 				6A010A311B51C0C200C88CB6 /* Supporting Files */,
+				6A010A4A1B51EECB00C88CB6 /* ExtensionAssets.xcassets */,
 			);
 			path = DeepDreamMachinePhotosExtension;
 			sourceTree = "<group>";
@@ -655,6 +658,22 @@
 				6A010A321B51C0C200C88CB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A010A431B51EDD700C88CB6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6A010A441B51EDE100C88CB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		A28B21A11963BACF005323D8 /* sequences */ = {
@@ -1263,6 +1282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A010A4B1B51EECB00C88CB6 /* ExtensionAssets.xcassets in Resources */,
 				6A010A421B51CFC300C88CB6 /* skyline2.png in Resources */,
 				6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */,
 			);

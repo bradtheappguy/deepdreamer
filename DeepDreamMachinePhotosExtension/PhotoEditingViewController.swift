@@ -14,12 +14,17 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var robotLoadingAnimationView: UIImageView!
+    @IBOutlet weak var robotCenterConstraint: NSLayoutConstraint!
     
     var input: PHContentEditingInput?
     var styleSelected: Int?
     
     let testButton = ParameterSelectionObject(imageName: "testImage", style: 1)
     
+    let robotLoadingImage1 = UIImage(named: "RobotLoadingFrame1")
+    let robotLoadingImage2 = UIImage(named: "RobotLoadingFrame2")
+    let robotLoadingImage3 = UIImage(named: "RobotLoadingFrame3")
     
     // MARK: - CollectionView properties
     var parameterSelectionObjects: [ParameterSelectionObject] = []
@@ -30,10 +35,10 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+
         parameterSelectionObjects.append(testButton)
         
-        collectionView.reloadData()
+        //thoughtBubble.collectionView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,8 +111,36 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     func cancelContentEditing() {
         // Clean up temporary files, etc.
         // May be called after finishContentEditingWithCompletionHandler: while you prepare output.
+        
+        stopLoadingAnimation()
+    }
+    
+    func startLoadingAnimation() {
+        if let image1 = robotLoadingImage1, image2 = robotLoadingImage2, image3 = robotLoadingImage3 {
+            let images = [image1, image2, image3]
+            
+            robotLoadingAnimationView.hidden = false
+            self.robotLoadingAnimationView.animationImages = images
+            self.robotLoadingAnimationView.animationDuration = 1.0
+            self.robotLoadingAnimationView.startAnimating()
+            
+            robotCenterConstraint.constant = 0
+            UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseIn, animations: { self.view.layoutIfNeeded() }) { success in
+                
+            }
+        }
     }
 
+    func stopLoadingAnimation() {
+        
+        robotCenterConstraint.constant = 500
+        UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseIn, animations: { self.view.layoutIfNeeded() }) { success in
+            self.robotLoadingAnimationView.stopAnimating()
+            self.robotLoadingAnimationView.hidden = true
+            self.robotCenterConstraint.constant = -500
+            self.view.layoutIfNeeded()
+        }
+    }
 }
 
 extension PhotoEditingViewController: UICollectionViewDataSource {
@@ -142,9 +175,11 @@ extension PhotoEditingViewController: UICollectionViewDelegate {
 
             let deepDream = DeepDreamAPIClient.sharedClient()
             
+            startLoadingAnimation()
             deepDream.requestDeepDreamImageUsingImage(inputImage, withStyle: Int32(object.style)) { outputImage in
                 self.imageView.image = outputImage
                 self.styleSelected = object.style
+                self.stopLoadingAnimation()
             }
         }
     }
