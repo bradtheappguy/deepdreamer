@@ -40,7 +40,7 @@
                         @"http://deepdream.theappguy.guru/dream?effect=%d",
                         style]];
   
-  image = [image resizedImage:CGSizeMake(256, 256) interpolationQuality:kCGInterpolationHigh];
+  image = [image resizedImage:CGSizeMake(320, 320) interpolationQuality:kCGInterpolationHigh];
   NSData *imageData = UIImageJPEGRepresentation(image, 0.75);
   
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

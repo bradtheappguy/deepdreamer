@@ -41,6 +41,9 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor clearColor];
+  self.view.superview.backgroundColor = [UIColor clearColor];
+  self.preferredContentSize = CGSizeMake(510, 513);
 
 #if DEBUG
   self.debugEditButton.hidden = NO;

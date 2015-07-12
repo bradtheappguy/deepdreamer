@@ -22,7 +22,13 @@
 }
 
 - (void) setBackgroundImage:(UIImage *)image {
-  backgroundImageView.image = image;
+  [UIView transitionWithView:backgroundImageView
+                    duration:5.0f
+                     options:UIViewAnimationOptionTransitionCrossDissolve
+                  animations:^{
+                    backgroundImageView.image = image;
+                  } completion:nil];
+  
 }
 - (id)initWithImage:(UIImage *)image presets:(NSString *)presets {
   self = [super initWithFrame:CGRectMake(0, 0, 0, 0) appFolder:@"/"];

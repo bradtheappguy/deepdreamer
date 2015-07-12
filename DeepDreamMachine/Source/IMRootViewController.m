@@ -450,8 +450,10 @@ static UINavigationController *nav2;
 
 - (void)brushPicker:(IMBrushPickerViewController *)picker didSelectSequence:(IMSequence *)sequence {
   UIImage *image = [self.canvasContainerView currentBackgroundImage];
-  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:1 completionHandler:^(UIImage *image){
-    [self.canvasContainerView setBackgroundImage:image];
+  [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:1 completionHandler:^(UIImage *image) {
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+      [self.canvasContainerView setBackgroundImage:image];
+    });
   }];
   ;
 }
