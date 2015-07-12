@@ -40,6 +40,24 @@
 		A271D9EC1B51A5C000A1CC1A /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9E01B51A5C000A1CC1A /* pencil.png */; };
 		A271D9ED1B51A5C000A1CC1A /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9E11B51A5C000A1CC1A /* pencil@2x.png */; };
 		A271D9F01B51C05200A1CC1A /* DeepDreamAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */; };
+		A271D9F21B51D52800A1CC1A /* output2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F11B51D52800A1CC1A /* output2.jpg */; };
+		A271D9F31B51D52800A1CC1A /* output2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F11B51D52800A1CC1A /* output2.jpg */; };
+		A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F41B51D5EF00A1CC1A /* in1.jpg */; };
+		A271D9F61B51D5EF00A1CC1A /* in1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F41B51D5EF00A1CC1A /* in1.jpg */; };
+		A271D9FA1B51E06F00A1CC1A /* icon-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F71B51E06F00A1CC1A /* icon-share@2x.png */; };
+		A271D9FB1B51E06F00A1CC1A /* icon-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F71B51E06F00A1CC1A /* icon-share@2x.png */; };
+		A271D9FC1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F81B51E06F00A1CC1A /* icon-robot@2x.png */; };
+		A271D9FD1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F81B51E06F00A1CC1A /* icon-robot@2x.png */; };
+		A271D9FE1B51E06F00A1CC1A /* icon-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F91B51E06F00A1CC1A /* icon-camera@2x.png */; };
+		A271D9FF1B51E06F00A1CC1A /* icon-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271D9F91B51E06F00A1CC1A /* icon-camera@2x.png */; };
+		A271DA011B51EF0000A1CC1A /* camera-popup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */; };
+		A271DA021B51EF0000A1CC1A /* camera-popup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */; };
+		A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */; };
+		A271DA0E1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */; };
+		A271DA101B52067C00A1CC1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A271DA0F1B52067C00A1CC1A /* libPods.a */; };
+		A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA111B52100C00A1CC1A /* heart-popup.png */; };
+		A271DA151B52100C00A1CC1A /* dream-popup2.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA121B52100C00A1CC1A /* dream-popup2.png */; };
+		A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */; };
 		A27541921962391B00778DB8 /* IMSequenceEditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */; };
 		A275AC4019284046000816E4 /* UIImage+FixRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A275AC3F19284046000816E4 /* UIImage+FixRotation.m */; };
 		A280A39619417E3500BC5338 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
@@ -306,6 +324,17 @@
 		A271D9E11B51A5C000A1CC1A /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil@2x.png"; path = "DeepDreamMachine/Images/pencil@2x.png"; sourceTree = SOURCE_ROOT; };
 		A271D9EE1B51C05200A1CC1A /* DeepDreamAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepDreamAPIClient.h; sourceTree = "<group>"; };
 		A271D9EF1B51C05200A1CC1A /* DeepDreamAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepDreamAPIClient.m; sourceTree = "<group>"; };
+		A271D9F11B51D52800A1CC1A /* output2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = output2.jpg; sourceTree = "<group>"; };
+		A271D9F41B51D5EF00A1CC1A /* in1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = in1.jpg; sourceTree = "<group>"; };
+		A271D9F71B51E06F00A1CC1A /* icon-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-share@2x.png"; sourceTree = "<group>"; };
+		A271D9F81B51E06F00A1CC1A /* icon-robot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-robot@2x.png"; sourceTree = "<group>"; };
+		A271D9F91B51E06F00A1CC1A /* icon-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-camera@2x.png"; sourceTree = "<group>"; };
+		A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-popup@2x.png"; sourceTree = "<group>"; };
+		A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-popup-mask@2x.png"; path = "DeepDreamMachine/Images/camera-popup-mask@2x.png"; sourceTree = SOURCE_ROOT; };
+		A271DA0F1B52067C00A1CC1A /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		A271DA111B52100C00A1CC1A /* heart-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-popup.png"; path = "DeepDreamMachine/Images/heart-popup.png"; sourceTree = SOURCE_ROOT; };
+		A271DA121B52100C00A1CC1A /* dream-popup2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2.png"; path = "DeepDreamMachine/Images/dream-popup2.png"; sourceTree = SOURCE_ROOT; };
+		A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup2@2x.png"; path = "DeepDreamMachine/Images/dream-popup2@2x.png"; sourceTree = SOURCE_ROOT; };
 		A27541901962391B00778DB8 /* IMSequenceEditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSequenceEditorTableViewController.h; sourceTree = "<group>"; };
 		A27541911962391B00778DB8 /* IMSequenceEditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSequenceEditorTableViewController.m; sourceTree = "<group>"; };
 		A275AC36191FF639000816E4 /* IMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMApplication.h; sourceTree = "<group>"; };
@@ -600,6 +629,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A271DA101B52067C00A1CC1A /* libPods.a in Frameworks */,
 				6A010A2D1B51C0C200C88CB6 /* PhotosUI.framework in Frameworks */,
 				6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */,
 			);
@@ -955,6 +985,7 @@
 		D35068CD18F779520058BDA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A271DA0F1B52067C00A1CC1A /* libPods.a */,
 				14D9D6B135B145A0B8EC6485 /* libPods.a */,
 				D3A5EC88190CF78700490588 /* libPods.a */,
 				D3A13E101909D1190060FA88 /* libicucore.dylib */,
@@ -993,6 +1024,8 @@
 				D3A13EB61909D6350060FA88 /* images */,
 				D3A13E811909D62E0060FA88 /* Source */,
 				D35068E018F779520058BDA9 /* Images.xcassets */,
+				A271D9F41B51D5EF00A1CC1A /* in1.jpg */,
+				A271D9F11B51D52800A1CC1A /* output2.jpg */,
 				D35068D518F779520058BDA9 /* Supporting Files */,
 				D3F19C5C19033C7800FD5551 /* Settings.storyboard */,
 				A271D9EE1B51C05200A1CC1A /* DeepDreamAPIClient.h */,
@@ -1106,6 +1139,14 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A271DA111B52100C00A1CC1A /* heart-popup.png */,
+				A271DA121B52100C00A1CC1A /* dream-popup2.png */,
+				A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */,
+				A271DA0C1B51F7B700A1CC1A /* camera-popup-mask@2x.png */,
+				A271DA001B51EEFF00A1CC1A /* camera-popup@2x.png */,
+				A271D9F71B51E06F00A1CC1A /* icon-share@2x.png */,
+				A271D9F81B51E06F00A1CC1A /* icon-robot@2x.png */,
+				A271D9F91B51E06F00A1CC1A /* icon-camera@2x.png */,
 				A271D9D61B51A5C000A1CC1A /* canvas.png */,
 				A271D9D71B51A5C000A1CC1A /* canvas@2x.png */,
 				A271D9D81B51A5C000A1CC1A /* close.png */,
@@ -1252,10 +1293,7 @@
 				TargetAttributes = {
 					6A010A2A1B51C0C200C88CB6 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = GT4UPLQPY7;
-					};
-					D35068CA18F779520058BDA9 = {
-						DevelopmentTeam = GT4UPLQPY7;
+						DevelopmentTeam = 399TA5Z29Z;
 					};
 				};
 			};
@@ -1283,8 +1321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A010A4B1B51EECB00C88CB6 /* ExtensionAssets.xcassets in Resources */,
+				A271DA0E1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */,
+				A271D9FF1B51E06F00A1CC1A /* icon-camera@2x.png in Resources */,
 				6A010A421B51CFC300C88CB6 /* skyline2.png in Resources */,
 				6A010A361B51C0C200C88CB6 /* MainInterface.storyboard in Resources */,
+				A271D9F61B51D5EF00A1CC1A /* in1.jpg in Resources */,
+				A271D9FD1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */,
+				A271DA021B51EF0000A1CC1A /* camera-popup@2x.png in Resources */,
+				A271D9F31B51D52800A1CC1A /* output2.jpg in Resources */,
+				A271D9FB1B51E06F00A1CC1A /* icon-share@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,6 +1337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A271D9F21B51D52800A1CC1A /* output2.jpg in Resources */,
 				C3C7B73A194E61F900DE1466 /* Ejecta.js in Resources */,
 				C9486B5819397C5D00E495E0 /* 1.json in Resources */,
 				C9486B5919397C5D00E495E0 /* 2.json in Resources */,
@@ -1313,10 +1359,13 @@
 				D36A874918FA0E2000C1A1B7 /* config.plist in Resources */,
 				D3A13EDC1909D6360060FA88 /* ImportClipboard.png in Resources */,
 				D33423A2190E305C005D3EE6 /* ShareFacebook-style7@2x.png in Resources */,
+				A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */,
 				D33423AF190E307C005D3EE6 /* ShareTwitter-style7.png in Resources */,
+				A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */,
 				A290032F192C5B0900749630 /* sample8_thumb@2x.jpg in Resources */,
 				A2D1FF7F197DE5070076AFCF /* IMCanvasPickerViewController.xib in Resources */,
 				D34E9814190C845E007465F5 /* RadialGradient.fsh in Resources */,
+				A271D9FC1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */,
 				A271D9E71B51A5C000A1CC1A /* SoundIcon@2x.png in Resources */,
 				D33423B0190E307C005D3EE6 /* ShareTwitter-style7@2x.png in Resources */,
 				D3A69D25190F2BBA0095627A /* iTunesArtwork@2x.png in Resources */,
@@ -1328,7 +1377,9 @@
 				D3A13EDD1909D6360060FA88 /* ImportClipboard@2x.png in Resources */,
 				A271D9EC1B51A5C000A1CC1A /* pencil.png in Resources */,
 				A271D9ED1B51A5C000A1CC1A /* pencil@2x.png in Resources */,
+				A271D9FE1B51E06F00A1CC1A /* icon-camera@2x.png in Resources */,
 				D3A13EA91909D62E0060FA88 /* IMRootViewController.xib in Resources */,
+				A271D9FA1B51E06F00A1CC1A /* icon-share@2x.png in Resources */,
 				D334239B190DD525005D3EE6 /* bg_avatar.png in Resources */,
 				A205069619380DA900D305CA /* attributes.json in Resources */,
 				D3A69D23190F2BB40095627A /* iTunesArtwork.png in Resources */,
@@ -1346,6 +1397,7 @@
 				D34E9816190C845E007465F5 /* Vertex.vsh in Resources */,
 				A271D9EA1B51A5C000A1CC1A /* options.png in Resources */,
 				D3A13ECE1909D6360060FA88 /* bg_bar~iPad@2x.png in Resources */,
+				A271DA011B51EF0000A1CC1A /* camera-popup@2x.png in Resources */,
 				D33423AC190E307C005D3EE6 /* ShareSincerely-style7@2x.png in Resources */,
 				D3A13ED11909D6360060FA88 /* camera@2x.png in Resources */,
 				D3F19C5D19033C7800FD5551 /* Settings.storyboard in Resources */,
@@ -1362,6 +1414,7 @@
 				D350690418F879D10058BDA9 /* Localizable.strings in Resources */,
 				D3A13ED21909D6360060FA88 /* ExportClipboard.png in Resources */,
 				A205069F193814C000D305CA /* IMBooleanAttributeTableViewCell.xib in Resources */,
+				A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */,
 				C3B26A461970B56A001917F5 /* IMBrushPickerViewController.xib in Resources */,
 				D34E9812190C845E007465F5 /* Flat.fsh in Resources */,
 				A271D9E81B51A5C000A1CC1A /* auto.png in Resources */,
@@ -1371,6 +1424,7 @@
 				A290032C192C5B0900749630 /* sample6.jpg in Resources */,
 				C3C7B741194E626500DE1466 /* 7.json in Resources */,
 				C3C7B744194E626500DE1466 /* 10.json in Resources */,
+				A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */,
 				A2900329192C5B0900749630 /* sample5_thumb@2x.jpg in Resources */,
 				A2900328192C5B0900749630 /* sample4.jpg in Resources */,
 				D33423A1190E305C005D3EE6 /* ShareFacebook-style7.png in Resources */,
@@ -1400,6 +1454,7 @@
 				A2900326192C5B0900749630 /* sample3.jpg in Resources */,
 				A2900327192C5B0900749630 /* sample4_thumb@2x.jpg in Resources */,
 				A28B21A31963BACF005323D8 /* a.json in Resources */,
+				A271DA151B52100C00A1CC1A /* dream-popup2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,6 +1649,10 @@
 				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1617,6 +1676,10 @@
 				INFOPLIST_FILE = DeepDreamMachinePhotosExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Jet. All rights reserved.
 //
 #import "DeepDreamAPIClient.h"
+//#import <AFNetworking/AFNetworking.h>
 
 @implementation DeepDreamAPIClient
 
@@ -28,17 +29,38 @@
   // Should never be called, but just here for clarity really.
 }
 
-- (void)MOCKRESPONSE:(void (^)(UIImage *image))completion {
-  UIImage *imageToReturn = [UIImage imageNamed:@"skyline2"];
-  completion(imageToReturn);
-}
-
 - (void)requestDeepDreamImageUsingImage:(UIImage *)image
                               withStyle:(int)style
                       completionHandler:(void (^)(UIImage *image))completion {
-  [self performSelector:@selector(MOCKRESPONSE:)
-             withObject:completion
-             afterDelay:2];
+  // 1
+  NSURL *url = [NSURL URLWithString:@"http://"
+                                    @"ec2-52-8-221-11.us-west-1.compute."
+                                    @"amazonaws.com:8888/postImage?effect=1"];
+  NSURLSessionConfiguration *config =
+      [NSURLSessionConfiguration defaultSessionConfiguration];
+  NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+
+  // 2
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+  request.HTTPMethod = @"POST";
+
+  // 3d
+  NSData *data = UIImageJPEGRepresentation(image, 0.8);
+  if (data) {
+    // 4
+    NSURLSessionUploadTask *uploadTask =
+        [session uploadTaskWithRequest:request
+                              fromData:data
+                     completionHandler:^(NSData *data, NSURLResponse *response,
+                                         NSError *error) {
+                       UIImage *imageToReturn =
+                           [[UIImage alloc] initWithData:data];
+                       completion(imageToReturn);
+                     }];
+
+    // 5
+    [uploadTask resume];
+  }
 }
 
 @end
