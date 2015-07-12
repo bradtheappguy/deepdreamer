@@ -16,12 +16,10 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var input: PHContentEditingInput?
-
-    // MARK: - Input selection objects
+    var styleSelected: Int?
     
-    let testButton = ParameterSelectionObject(imageName: "testImage") {
-        println("Doing something useful")
-    }
+    let testButton = ParameterSelectionObject(imageName: "testImage", style: 1)
+    
     
     // MARK: - CollectionView properties
     var parameterSelectionObjects: [ParameterSelectionObject] = []
@@ -68,15 +66,34 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
             // Create editing output from the editing input.
             let output = PHContentEditingOutput(contentEditingInput: self.input)
             
-            // Provide new adjustments and render output to given location.
-            // output.adjustmentData = <#new adjustment data#>
-            // let renderedJPEGData = <#output JPEG#>
-            // renderedJPEGData.writeToURL(output.renderedContentURL, atomically: true)
-            
-            // Call completion handler to commit edit to Photos.
-            completionHandler?(output)
-            
-            // Clean up temporary files, etc.
+            if let style = self.styleSelected {
+                
+                let archivedData = NSKeyedArchiver.archivedDataWithRootObject("Deep dream with style: \(style)")
+                let identifier = "Deep dream"
+                let version = "0.1"
+                let adjustmentData = PHAdjustmentData(formatIdentifier: identifier, formatVersion: version, data: archivedData)
+                
+                output.adjustmentData = adjustmentData
+                
+                if let finalImage = self.imageView.image {
+                    let jpegData = UIImageJPEGRepresentation(finalImage, 1.0)
+                    
+                    var error: NSError?
+                    jpegData.writeToURL(output.renderedContentURL, options: .DataWritingAtomic, error: &error)
+                    if let error = error {
+                        println(error)
+                        completionHandler(nil)
+                    }
+                    
+                    completionHandler(output)
+                } else {
+                    println("No image found when attempting to save")
+                    completionHandler(nil)
+                }
+            } else {
+                println("No style selected")
+                completionHandler(nil)
+            }
         }
     }
 
@@ -104,7 +121,7 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
         if let image = UIImage(named: object.imageName) {
             cell.contentView.addSubview(UIImageView(image: image))
         } else {
-            println("Image could not be loaded or wasn't found")
+            println("Icon for cell could not be loaded or wasn't found")
             
             cell.backgroundColor = UIColor.redColor()
         }
@@ -120,8 +137,15 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
 extension PhotoEditingViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let object = parameterSelectionObjects[indexPath.row]
-        
-        object.action()
+        if let inputImage = self.input?.displaySizeImage {
+            let object = parameterSelectionObjects[indexPath.row]
+
+            let deepDream = DeepDreamAPIClient.sharedClient()
+            
+            deepDream.requestDeepDreamImageUsingImage(inputImage, withStyle: Int32(object.style)) { outputImage in
+                self.imageView.image = outputImage
+                self.styleSelected = object.style
+            }
+        }
     }
 }

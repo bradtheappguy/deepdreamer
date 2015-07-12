@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface DeepDreamAPIClient : NSObject
 
-+ (id)sharedClient;
++ (instancetype)sharedClient;
 
 /*
   style is an int between 0 and 10 for now
