@@ -20,8 +20,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-4f-29h">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-He-te8">
-                                <rect key="frame" x="500" y="0.0" width="320" height="528"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-He-te8">
+                                <rect key="frame" x="500" y="20" width="320" height="508"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-6y-S6x">
                                 <rect key="frame" x="0.0" y="453" width="320" height="75"/>
@@ -69,10 +69,10 @@
                         <constraints>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="aWa-6y-S6x" secondAttribute="bottom" id="37N-gA-2P2"/>
                             <constraint firstItem="bhb-He-te8" firstAttribute="width" secondItem="zMn-AG-sqS" secondAttribute="width" id="7Dn-Wg-2XJ"/>
+                            <constraint firstItem="aWa-6y-S6x" firstAttribute="bottom" secondItem="bhb-He-te8" secondAttribute="bottom" id="FsJ-un-vr7"/>
                             <constraint firstItem="aWa-6y-S6x" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-16" id="PBa-ZC-JwJ"/>
                             <constraint firstAttribute="centerX" secondItem="bhb-He-te8" secondAttribute="centerX" constant="-500" id="a2z-i4-M5v"/>
-                            <constraint firstItem="bhb-He-te8" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="topMargin" id="ej2-I9-pdg"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="bhb-He-te8" secondAttribute="bottom" id="jlE-Aa-fUi"/>
+                            <constraint firstItem="bhb-He-te8" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="s0b-qu-H7O"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aWa-6y-S6x" secondAttribute="trailing" constant="-16" id="zh7-8A-xvH"/>
                         </constraints>
                     </view>

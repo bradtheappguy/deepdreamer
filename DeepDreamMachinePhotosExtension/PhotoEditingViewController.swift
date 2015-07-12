@@ -12,16 +12,28 @@ import PhotosUI
 
 class PhotoEditingViewController: UIViewController, PHContentEditingController {
 
+    // Image view which displays image before and after editing
     @IBOutlet weak var imageView: UIImageView!
+    
+    // Collection view which contains parameter selection icons
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    // Image view which gets animated with three robot loading images
     @IBOutlet weak var robotLoadingAnimationView: UIImageView!
+    
+    // Constraint used for animating robot loading screen
     @IBOutlet weak var robotCenterConstraint: NSLayoutConstraint!
     
+    // Input recieved when extension is launched
     var input: PHContentEditingInput?
     
+    // Style to be sent to the server to decide which parameters the Deep Dream program should use
     var styleSelected: Int?
+    
+    // True when a parameter selection button has been tapped but the server hasn't returned yet. When true no new requests can be sent to the server.
     var isWaitingForServer = false
     
+    // Parameter selection objects which appear in the collection view at the bottom of the screen
     let button1 = ParameterSelectionObject(imageName: "ParameterSelection1", style: 1)
     let button2 = ParameterSelectionObject(imageName: "ParameterSelection2", style: 2)
     let button3 = ParameterSelectionObject(imageName: "ParameterSelection3", style: 3)
@@ -29,12 +41,17 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     let button5 = ParameterSelectionObject(imageName: "ParameterSelection5", style: 5)
     let button6 = ParameterSelectionObject(imageName: "ParameterSelection6", style: 6)
     
+    // Images which are used for animating the robotLoadingAnimationView
     let robotLoadingImage1 = UIImage(named: "RobotLoadingFrame1")
     let robotLoadingImage2 = UIImage(named: "RobotLoadingFrame2")
     let robotLoadingImage3 = UIImage(named: "RobotLoadingFrame3")
     
     // MARK: - CollectionView properties
+    
+    // An array containing the parameter selection objects. Acts as the data source array for the parameter selection collection view. Make sure to add the ParameterSelectionObjects within ViewDidLoad.
     var parameterSelectionObjects: [ParameterSelectionObject] = []
+    
+    // Identifier for parameterSelectionCells
     let parameterSelectionCellIdentifier = "parameterSelectionCell"
     
     // MARK: - PhotoEditingViewController
@@ -43,6 +60,7 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+        // Adding parameter selection objects to data source
         parameterSelectionObjects = [button1, button2, button3, button4, button5, button6]
         
         collectionView.reloadData()
@@ -86,6 +104,8 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
                 let adjustmentData = PHAdjustmentData(formatIdentifier: identifier, formatVersion: version, data: archivedData)
                 
                 output.adjustmentData = adjustmentData
+                
+                // Technically it's better to use the full image from the input object and send it to the server to get back a better quality image but as it is getting shrunk down anyway before getting sent to server and since this avoids sending another request to the server, the imageView.image is used anyway.
                 
                 if let finalImage = self.imageView.image {
                     let jpegData = UIImageJPEGRepresentation(finalImage, 1.0)
@@ -194,5 +214,9 @@ extension PhotoEditingViewController: UICollectionViewDelegate {
                 }
             }
         }
+    }
+    
+    func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
     }
 }

@@ -10,5 +10,6 @@ struct ParameterSelectionObject {
     // Name of image to load from the Asset catalog
     let imageName: String
     
+    // Style integer to be sent to server
     let style: Int
 }
