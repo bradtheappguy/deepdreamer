@@ -23,7 +23,7 @@
 
 - (void) setBackgroundImage:(UIImage *)image {
   [UIView transitionWithView:backgroundImageView
-                    duration:5.0f
+                    duration:3.0f
                      options:UIViewAnimationOptionTransitionCrossDissolve
                   animations:^{
                     backgroundImageView.image = image;

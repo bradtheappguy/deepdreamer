@@ -45,6 +45,8 @@
   ScaleAnimation *_scaleAnimationController;
       
       NSUInteger selectedPrestImageIndex;
+      
+      MBProgressHUD *robotProgressHUD;
 }
 
 @property(weak, nonatomic) IBOutlet IMCanvasContainerView *canvasContainerView;
@@ -184,6 +186,9 @@
 #pragma mark Button Handling
 
 - (IBAction)cameraButtonPressed:(UIButton *)sender {
+  
+    [robotProgressHUD hide:YES];
+  
   [self.canvasContainerView pause];
   IMImagePickingViewController *vc =
       [[IMImagePickingViewController alloc] initWithDelegate:self];
@@ -208,6 +213,8 @@
 - (IBAction)brushButtonPressed:(UIButton *)sender {
   // self.scrollView.hidden = !self.scrollView.hidden;
 
+  [robotProgressHUD hide:YES];
+  
   [self.canvasContainerView pause];
   // sender.enabled = NO;
   IMBrushPickerViewController *vc = [[IMBrushPickerViewController alloc]
@@ -481,7 +488,7 @@ static UINavigationController *nav2;
  
   UIImage *newImage;
   
-  if (selectedPrestImageIndex > 0) {
+  if (selectedPrestImageIndex > 0 && selectedPrestImageIndex < 6) {
     //We are using a preset so we should load an image from the bundle
     
     NSString *imageName = [NSString stringWithFormat:@"newoutputf%d-%d.jpg",sequence+1,selectedPrestImageIndex];
@@ -504,8 +511,18 @@ static UINavigationController *nav2;
     
   }
   else {
+    UIWindow *mainWindow = [UIApplication sharedApplication].windows[0];
+    robotProgressHUD = [[MBProgressHUD alloc] initWithWindow:mainWindow];
+    robotProgressHUD.labelFont = [UIFont fontWithName:@"futura" size:15];
+    robotProgressHUD.labelText = @"Dreaming...";
+    robotProgressHUD.detailsLabelText = @"This may take a bit";
+    robotProgressHUD.userInteractionEnabled = NO;
+    [mainWindow addSubview:robotProgressHUD];
+    [robotProgressHUD show:YES];
+    
     [[DeepDreamAPIClient sharedClient] requestDeepDreamImageUsingImage:image withStyle:sequence completionHandler:^(UIImage *image) {
-      dispatch_async(dispatch_get_main_queue(), ^(void){
+      dispatch_async(dispatch_get_main_queue(), ^(void) {
+        [robotProgressHUD hide:YES];
         [self.canvasContainerView setBackgroundImage:image];
       });
     }];
@@ -551,6 +568,8 @@ static UINavigationController *nav2;
 
 - (void)picker:(IMImagePickingViewController *)picker
     didFinishPickingImageWithURL:(NSURL *)url {
+  
+  [robotProgressHUD hide:YES];
   
   selectedPrestImageIndex = picker.indexOfPresetImage;
   

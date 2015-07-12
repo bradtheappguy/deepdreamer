@@ -44,9 +44,9 @@
   
 
   [self setViewToCenterAndZoom:self.canvasView];
-  progessHUD = [[MBProgressHUD alloc] initWithFrame:self.canvasView.bounds];
-  [[self superview] addSubview:progessHUD];
-  [self showProgressHUDWithString:NSLocalizedString(@"Dreaming Deeply...", nil) ];
+  //progessHUD = [[MBProgressHUD alloc] initWithFrame:self.canvasView.bounds];
+  //[[self superview] addSubview:progessHUD];
+  //[self showProgressHUDWithString:NSLocalizedString(@"Dreaming Deeply...", nil) ];
 
 }
 
@@ -87,7 +87,7 @@
 }
 
 - (void) hideProgressView {
-  //[progessHUD hide:YES];
+  [progessHUD hide:YES];
 }
 
 - (void) updateProgressView:(NSNotification *)notification {
