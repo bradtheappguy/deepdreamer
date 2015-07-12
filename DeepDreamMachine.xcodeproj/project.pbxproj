@@ -18,6 +18,7 @@
 		6A010A4B1B51EECB00C88CB6 /* ExtensionAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A010A4A1B51EECB00C88CB6 /* ExtensionAssets.xcassets */; };
 		6A2BEFBE1B523410001D82E4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2BEFBD1B523410001D82E4 /* Extensions.swift */; };
 		6AEE16361B52D54E007D3597 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A39419417E3500BC5338 /* UIImage+Resize.m */; };
+		6AEE16391B52DC33007D3597 /* ParameterSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE16381B52DC33007D3597 /* ParameterSelectionCell.swift */; };
 		A205069619380DA900D305CA /* attributes.json in Resources */ = {isa = PBXBuildFile; fileRef = A205069519380DA900D305CA /* attributes.json */; };
 		A205069A19380E2B00D305CA /* IMPaintingsAttributesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */; };
 		A205069B19380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A205069919380E2B00D305CA /* IMPaintingsAttributesTableViewController.xib */; };
@@ -324,6 +325,7 @@
 		6A010A411B51C8FC00C88CB6 /* DeepDreamMachinePhotosExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepDreamMachinePhotosExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A010A4A1B51EECB00C88CB6 /* ExtensionAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionAssets.xcassets; sourceTree = "<group>"; };
 		6A2BEFBD1B523410001D82E4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6AEE16381B52DC33007D3597 /* ParameterSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterSelectionCell.swift; sourceTree = "<group>"; };
 		A205069519380DA900D305CA /* attributes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = attributes.json; sourceTree = "<group>"; };
 		A205069719380E2B00D305CA /* IMPaintingsAttributesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPaintingsAttributesTableViewController.h; sourceTree = "<group>"; };
 		A205069819380E2B00D305CA /* IMPaintingsAttributesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPaintingsAttributesTableViewController.m; sourceTree = "<group>"; };
@@ -732,6 +734,7 @@
 			isa = PBXGroup;
 			children = (
 				6A2BEFBD1B523410001D82E4 /* Extensions.swift */,
+				6AEE16371B52DC1D007D3597 /* Views */,
 				6A010A441B51EDE100C88CB6 /* Model */,
 				6A010A431B51EDD700C88CB6 /* Controllers */,
 				6A010A411B51C8FC00C88CB6 /* DeepDreamMachinePhotosExtension-Bridging-Header.h */,
@@ -764,6 +767,14 @@
 				6A010A3E1B51C0E900C88CB6 /* ParameterSelectionObject.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6AEE16371B52DC1D007D3597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AEE16381B52DC33007D3597 /* ParameterSelectionCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		A28B21A11963BACF005323D8 /* sequences */ = {
@@ -1621,6 +1632,7 @@
 				6A010A401B51C82D00C88CB6 /* DeepDreamAPIClient.m in Sources */,
 				6A010A3F1B51C0E900C88CB6 /* ParameterSelectionObject.swift in Sources */,
 				6A2BEFBE1B523410001D82E4 /* Extensions.swift in Sources */,
+				6AEE16391B52DC33007D3597 /* ParameterSelectionCell.swift in Sources */,
 				6AEE16361B52D54E007D3597 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

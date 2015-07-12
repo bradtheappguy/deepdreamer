@@ -18,14 +18,16 @@ class PhotoEditingViewController: UIViewController, PHContentEditingController {
     @IBOutlet weak var robotCenterConstraint: NSLayoutConstraint!
     
     var input: PHContentEditingInput?
-    var styleSelected: Int?
     
-    let button1 = ParameterSelectionObject(imageName: "testImage", style: 1)
-    let button2 = ParameterSelectionObject(imageName: "", style: 2)
-    let button3 = ParameterSelectionObject(imageName: "", style: 3)
-    let button4 = ParameterSelectionObject(imageName: "", style: 4)
-    let button5 = ParameterSelectionObject(imageName: "", style: 5)
-    let button6 = ParameterSelectionObject(imageName: "", style: 6)
+    var styleSelected: Int?
+    var isWaitingForServer = false
+    
+    let button1 = ParameterSelectionObject(imageName: "ParameterSelection1", style: 1)
+    let button2 = ParameterSelectionObject(imageName: "ParameterSelection2", style: 2)
+    let button3 = ParameterSelectionObject(imageName: "ParameterSelection3", style: 3)
+    let button4 = ParameterSelectionObject(imageName: "ParameterSelection4", style: 4)
+    let button5 = ParameterSelectionObject(imageName: "ParameterSelection5", style: 5)
+    let button6 = ParameterSelectionObject(imageName: "ParameterSelection6", style: 6)
     
     let robotLoadingImage1 = UIImage(named: "RobotLoadingFrame1")
     let robotLoadingImage2 = UIImage(named: "RobotLoadingFrame2")
@@ -152,12 +154,12 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(parameterSelectionCellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(parameterSelectionCellIdentifier, forIndexPath: indexPath) as! ParameterSelectionCell
         
         let object = parameterSelectionObjects[indexPath.row]
         
         if let image = UIImage(named: object.imageName) {
-            cell.contentView.addSubview(UIImageView(image: image))
+            cell.imageView?.image = image
         } else {
             println("Icon for cell could not be loaded or wasn't found")
             
@@ -175,16 +177,21 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
 extension PhotoEditingViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        if let inputImage = self.input?.displaySizeImage {
-            let object = parameterSelectionObjects[indexPath.row]
-
-            let deepDream = DeepDreamAPIClient.sharedClient()
-            
-            startLoadingAnimation()
-            deepDream.requestDeepDreamImageUsingImage(inputImage, withStyle: Int32(object.style)) { outputImage in
-                self.imageView.image = outputImage
-                self.styleSelected = object.style
-                self.stopLoadingAnimation()
+        if isWaitingForServer == false {
+            if let inputImage = self.input?.displaySizeImage {
+                let object = parameterSelectionObjects[indexPath.row]
+                
+                let deepDream = DeepDreamAPIClient.sharedClient()
+                
+                self.isWaitingForServer = true
+                
+                startLoadingAnimation()
+                deepDream.requestDeepDreamImageUsingImage(inputImage, withStyle: Int32(object.style)) { outputImage in
+                    self.imageView.image = outputImage
+                    self.styleSelected = object.style
+                    self.isWaitingForServer = false
+                    self.stopLoadingAnimation()
+                }
             }
         }
     }

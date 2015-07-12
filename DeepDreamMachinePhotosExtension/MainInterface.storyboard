@@ -35,14 +35,28 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="parameterSelectionCell" id="4At-SV-GCI">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="parameterSelectionCell" id="4At-SV-GCI" customClass="ParameterSelectionCell" customModule="DeepDreamMachinePhotosExtension" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VQN-9V-F6k">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="VQN-9V-F6k" firstAttribute="leading" secondItem="4At-SV-GCI" secondAttribute="leadingMargin" constant="-8" id="8J8-me-cSn"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="VQN-9V-F6k" secondAttribute="trailing" constant="-8" id="MGw-ZA-maQ"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="VQN-9V-F6k" secondAttribute="bottom" constant="-8" id="Nq6-i3-j0W"/>
+                                            <constraint firstItem="VQN-9V-F6k" firstAttribute="top" secondItem="4At-SV-GCI" secondAttribute="topMargin" constant="-8" id="QsG-T9-q5q"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="VQN-9V-F6k" id="lcM-lc-eAG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
