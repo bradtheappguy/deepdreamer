@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55729D331B5260150099CDBA /* app6.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D1D1B5260150099CDBA /* app6.png */; };
+		55729D341B5260150099CDBA /* brush_thumbs in Resources */ = {isa = PBXBuildFile; fileRef = 55729D1E1B5260150099CDBA /* brush_thumbs */; };
+		55729D351B5260150099CDBA /* button-layer-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D1F1B5260150099CDBA /* button-layer-1.png */; };
+		55729D361B5260150099CDBA /* button-layer-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D201B5260150099CDBA /* button-layer-1@2x.png */; };
+		55729D371B5260150099CDBA /* button-layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D211B5260150099CDBA /* button-layer-2.png */; };
+		55729D381B5260150099CDBA /* button-layer-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D221B5260150099CDBA /* button-layer-2@2x.png */; };
+		55729D391B5260150099CDBA /* button-layer-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D231B5260150099CDBA /* button-layer-3.png */; };
+		55729D3A1B5260150099CDBA /* button-layer-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D241B5260150099CDBA /* button-layer-3@2x.png */; };
+		55729D3B1B5260150099CDBA /* button-layer-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D251B5260150099CDBA /* button-layer-4.png */; };
+		55729D3C1B5260150099CDBA /* button-layer-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D261B5260150099CDBA /* button-layer-4@2x.png */; };
+		55729D3D1B5260150099CDBA /* button-layer-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D271B5260150099CDBA /* button-layer-5.png */; };
+		55729D3E1B5260150099CDBA /* button-layer-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D281B5260150099CDBA /* button-layer-5@2x.png */; };
+		55729D3F1B5260150099CDBA /* button-layer-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D291B5260150099CDBA /* button-layer-6.png */; };
+		55729D401B5260150099CDBA /* button-layer-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2A1B5260150099CDBA /* button-layer-6@2x.png */; };
+		55729D411B5260150099CDBA /* camera-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2B1B5260150099CDBA /* camera-popup.png */; };
+		55729D421B5260150099CDBA /* credits.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2C1B5260150099CDBA /* credits.png */; };
+		55729D431B5260150099CDBA /* credits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2D1B5260150099CDBA /* credits@2x.png */; };
+		55729D441B5260150099CDBA /* dream-popup-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2E1B5260150099CDBA /* dream-popup-back.png */; };
+		55729D451B5260150099CDBA /* dream-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D2F1B5260150099CDBA /* dream-popup.png */; };
+		55729D461B5260150099CDBA /* ExportFilmRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D301B5260150099CDBA /* ExportFilmRoll.png */; };
+		55729D471B5260150099CDBA /* ExportFilmRoll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D311B5260150099CDBA /* ExportFilmRoll@2x.png */; };
+		55729D481B5260150099CDBA /* icon-robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D321B5260150099CDBA /* icon-robot.png */; };
+		55729D4A1B5262590099CDBA /* formatting.png in Resources */ = {isa = PBXBuildFile; fileRef = 55729D491B5262590099CDBA /* formatting.png */; };
 		6A010A2D1B51C0C200C88CB6 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A010A2C1B51C0C200C88CB6 /* PhotosUI.framework */; };
 		6A010A2F1B51C0C200C88CB6 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A010A2E1B51C0C200C88CB6 /* Photos.framework */; };
 		6A010A341B51C0C200C88CB6 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A010A331B51C0C200C88CB6 /* PhotoEditingViewController.swift */; };
@@ -284,6 +307,29 @@
 
 /* Begin PBXFileReference section */
 		14D9D6B135B145A0B8EC6485 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55729D1D1B5260150099CDBA /* app6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app6.png; path = DeepDreamMachine/Images/app6.png; sourceTree = SOURCE_ROOT; };
+		55729D1E1B5260150099CDBA /* brush_thumbs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = brush_thumbs; path = DeepDreamMachine/Images/brush_thumbs; sourceTree = SOURCE_ROOT; };
+		55729D1F1B5260150099CDBA /* button-layer-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-1.png"; path = "DeepDreamMachine/Images/button-layer-1.png"; sourceTree = SOURCE_ROOT; };
+		55729D201B5260150099CDBA /* button-layer-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-1@2x.png"; path = "DeepDreamMachine/Images/button-layer-1@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D211B5260150099CDBA /* button-layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-2.png"; path = "DeepDreamMachine/Images/button-layer-2.png"; sourceTree = SOURCE_ROOT; };
+		55729D221B5260150099CDBA /* button-layer-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-2@2x.png"; path = "DeepDreamMachine/Images/button-layer-2@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D231B5260150099CDBA /* button-layer-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-3.png"; path = "DeepDreamMachine/Images/button-layer-3.png"; sourceTree = SOURCE_ROOT; };
+		55729D241B5260150099CDBA /* button-layer-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-3@2x.png"; path = "DeepDreamMachine/Images/button-layer-3@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D251B5260150099CDBA /* button-layer-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-4.png"; path = "DeepDreamMachine/Images/button-layer-4.png"; sourceTree = SOURCE_ROOT; };
+		55729D261B5260150099CDBA /* button-layer-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-4@2x.png"; path = "DeepDreamMachine/Images/button-layer-4@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D271B5260150099CDBA /* button-layer-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-5.png"; path = "DeepDreamMachine/Images/button-layer-5.png"; sourceTree = SOURCE_ROOT; };
+		55729D281B5260150099CDBA /* button-layer-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-5@2x.png"; path = "DeepDreamMachine/Images/button-layer-5@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D291B5260150099CDBA /* button-layer-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-6.png"; path = "DeepDreamMachine/Images/button-layer-6.png"; sourceTree = SOURCE_ROOT; };
+		55729D2A1B5260150099CDBA /* button-layer-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-layer-6@2x.png"; path = "DeepDreamMachine/Images/button-layer-6@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D2B1B5260150099CDBA /* camera-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-popup.png"; path = "DeepDreamMachine/Images/camera-popup.png"; sourceTree = SOURCE_ROOT; };
+		55729D2C1B5260150099CDBA /* credits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = credits.png; path = DeepDreamMachine/Images/credits.png; sourceTree = SOURCE_ROOT; };
+		55729D2D1B5260150099CDBA /* credits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "credits@2x.png"; path = "DeepDreamMachine/Images/credits@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D2E1B5260150099CDBA /* dream-popup-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup-back.png"; path = "DeepDreamMachine/Images/dream-popup-back.png"; sourceTree = SOURCE_ROOT; };
+		55729D2F1B5260150099CDBA /* dream-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dream-popup.png"; path = "DeepDreamMachine/Images/dream-popup.png"; sourceTree = SOURCE_ROOT; };
+		55729D301B5260150099CDBA /* ExportFilmRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExportFilmRoll.png; path = DeepDreamMachine/Images/ExportFilmRoll.png; sourceTree = SOURCE_ROOT; };
+		55729D311B5260150099CDBA /* ExportFilmRoll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ExportFilmRoll@2x.png"; path = "DeepDreamMachine/Images/ExportFilmRoll@2x.png"; sourceTree = SOURCE_ROOT; };
+		55729D321B5260150099CDBA /* icon-robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-robot.png"; path = "DeepDreamMachine/Images/icon-robot.png"; sourceTree = SOURCE_ROOT; };
+		55729D491B5262590099CDBA /* formatting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = formatting.png; path = DeepDreamMachine/Images/formatting.png; sourceTree = SOURCE_ROOT; };
 		6A010A2B1B51C0C200C88CB6 /* DeepDreamMachinePhotosExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeepDreamMachinePhotosExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A010A2C1B51C0C200C88CB6 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		6A010A2E1B51C0C200C88CB6 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -1139,6 +1185,29 @@
 		D3A13EB61909D6350060FA88 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				55729D491B5262590099CDBA /* formatting.png */,
+				55729D1D1B5260150099CDBA /* app6.png */,
+				55729D1E1B5260150099CDBA /* brush_thumbs */,
+				55729D1F1B5260150099CDBA /* button-layer-1.png */,
+				55729D201B5260150099CDBA /* button-layer-1@2x.png */,
+				55729D211B5260150099CDBA /* button-layer-2.png */,
+				55729D221B5260150099CDBA /* button-layer-2@2x.png */,
+				55729D231B5260150099CDBA /* button-layer-3.png */,
+				55729D241B5260150099CDBA /* button-layer-3@2x.png */,
+				55729D251B5260150099CDBA /* button-layer-4.png */,
+				55729D261B5260150099CDBA /* button-layer-4@2x.png */,
+				55729D271B5260150099CDBA /* button-layer-5.png */,
+				55729D281B5260150099CDBA /* button-layer-5@2x.png */,
+				55729D291B5260150099CDBA /* button-layer-6.png */,
+				55729D2A1B5260150099CDBA /* button-layer-6@2x.png */,
+				55729D2B1B5260150099CDBA /* camera-popup.png */,
+				55729D2C1B5260150099CDBA /* credits.png */,
+				55729D2D1B5260150099CDBA /* credits@2x.png */,
+				55729D2E1B5260150099CDBA /* dream-popup-back.png */,
+				55729D2F1B5260150099CDBA /* dream-popup.png */,
+				55729D301B5260150099CDBA /* ExportFilmRoll.png */,
+				55729D311B5260150099CDBA /* ExportFilmRoll@2x.png */,
+				55729D321B5260150099CDBA /* icon-robot.png */,
 				A271DA111B52100C00A1CC1A /* heart-popup.png */,
 				A271DA121B52100C00A1CC1A /* dream-popup2.png */,
 				A271DA131B52100C00A1CC1A /* dream-popup2@2x.png */,
@@ -1339,8 +1408,10 @@
 			files = (
 				A271D9F21B51D52800A1CC1A /* output2.jpg in Resources */,
 				C3C7B73A194E61F900DE1466 /* Ejecta.js in Resources */,
+				55729D341B5260150099CDBA /* brush_thumbs in Resources */,
 				C9486B5819397C5D00E495E0 /* 1.json in Resources */,
 				C9486B5919397C5D00E495E0 /* 2.json in Resources */,
+				55729D451B5260150099CDBA /* dream-popup.png in Resources */,
 				C9486B5A19397C5D00E495E0 /* 3.json in Resources */,
 				C9486B5B19397C5D00E495E0 /* 4.json in Resources */,
 				C9486B5C19397C5D00E495E0 /* 5.json in Resources */,
@@ -1348,32 +1419,40 @@
 				C9486B5E19397C5D00E495E0 /* 6.json in Resources */,
 				A2900323192C5B0900749630 /* sample2_thumb@2x.jpg in Resources */,
 				D3A13ED01909D6360060FA88 /* camera.png in Resources */,
+				55729D431B5260150099CDBA /* credits@2x.png in Resources */,
 				D3A69D29190F444B0095627A /* example_2.png in Resources */,
 				D3A13EA61909D62E0060FA88 /* IMImagePickingViewController.xib in Resources */,
 				A290030D192B2A7300749630 /* IMWebViewController.xib in Resources */,
 				A271D9E21B51A5C000A1CC1A /* canvas.png in Resources */,
 				A271D9E51B51A5C000A1CC1A /* close@2x.png in Resources */,
+				55729D391B5260150099CDBA /* button-layer-3.png in Resources */,
 				D3A13EB01909D62E0060FA88 /* IMSettingsViewController.xib in Resources */,
 				D3A13EB21909D62E0060FA88 /* IMSharingViewController.xib in Resources */,
 				D33423A3190E305C005D3EE6 /* ShareInstagram-style7.png in Resources */,
+				55729D361B5260150099CDBA /* button-layer-1@2x.png in Resources */,
 				D36A874918FA0E2000C1A1B7 /* config.plist in Resources */,
 				D3A13EDC1909D6360060FA88 /* ImportClipboard.png in Resources */,
+				55729D4A1B5262590099CDBA /* formatting.png in Resources */,
 				D33423A2190E305C005D3EE6 /* ShareFacebook-style7@2x.png in Resources */,
 				A271DA161B52100C00A1CC1A /* dream-popup2@2x.png in Resources */,
 				D33423AF190E307C005D3EE6 /* ShareTwitter-style7.png in Resources */,
 				A271DA141B52100C00A1CC1A /* heart-popup.png in Resources */,
 				A290032F192C5B0900749630 /* sample8_thumb@2x.jpg in Resources */,
 				A2D1FF7F197DE5070076AFCF /* IMCanvasPickerViewController.xib in Resources */,
+				55729D441B5260150099CDBA /* dream-popup-back.png in Resources */,
 				D34E9814190C845E007465F5 /* RadialGradient.fsh in Resources */,
 				A271D9FC1B51E06F00A1CC1A /* icon-robot@2x.png in Resources */,
 				A271D9E71B51A5C000A1CC1A /* SoundIcon@2x.png in Resources */,
 				D33423B0190E307C005D3EE6 /* ShareTwitter-style7@2x.png in Resources */,
+				55729D481B5260150099CDBA /* icon-robot.png in Resources */,
+				55729D3B1B5260150099CDBA /* button-layer-4.png in Resources */,
 				D3A69D25190F2BBA0095627A /* iTunesArtwork@2x.png in Resources */,
 				C3C7B742194E626500DE1466 /* 8.json in Resources */,
 				D3A13EE01909D6360060FA88 /* Settings.png in Resources */,
 				A2900324192C5B0900749630 /* sample2.jpg in Resources */,
 				A2900330192C5B0900749630 /* sample8.jpg in Resources */,
 				D3A13EDA1909D6360060FA88 /* ImportCamera.png in Resources */,
+				55729D381B5260150099CDBA /* button-layer-2@2x.png in Resources */,
 				D3A13EDD1909D6360060FA88 /* ImportClipboard@2x.png in Resources */,
 				A271D9EC1B51A5C000A1CC1A /* pencil.png in Resources */,
 				A271D9ED1B51A5C000A1CC1A /* pencil@2x.png in Resources */,
@@ -1384,23 +1463,30 @@
 				A205069619380DA900D305CA /* attributes.json in Resources */,
 				D3A69D23190F2BB40095627A /* iTunesArtwork.png in Resources */,
 				D334239C190DD525005D3EE6 /* bg_avatar@2x.png in Resources */,
+				55729D421B5260150099CDBA /* credits.png in Resources */,
 				D35068D918F779520058BDA9 /* InfoPlist.strings in Resources */,
 				A271D9EB1B51A5C000A1CC1A /* options@2x.png in Resources */,
 				D3A13ED51909D6360060FA88 /* ExportMail@2x.png in Resources */,
 				D33423A4190E305C005D3EE6 /* ShareInstagram-style7@2x.png in Resources */,
 				D3A13ED91909D6360060FA88 /* heart@2x.png in Resources */,
+				55729D3C1B5260150099CDBA /* button-layer-4@2x.png in Resources */,
+				55729D3F1B5260150099CDBA /* button-layer-6.png in Resources */,
 				D34E9811190C845E007465F5 /* AlphaTexture.fsh in Resources */,
 				A271D9E91B51A5C000A1CC1A /* auto@2x.png in Resources */,
 				A290032E192C5B0900749630 /* sample7.jpg in Resources */,
 				D33423AE190E307C005D3EE6 /* ShareTumblr-style7@2x.png in Resources */,
 				D33423AB190E307C005D3EE6 /* ShareSincerely-style7.png in Resources */,
+				55729D3D1B5260150099CDBA /* button-layer-5.png in Resources */,
 				D34E9816190C845E007465F5 /* Vertex.vsh in Resources */,
 				A271D9EA1B51A5C000A1CC1A /* options.png in Resources */,
 				D3A13ECE1909D6360060FA88 /* bg_bar~iPad@2x.png in Resources */,
 				A271DA011B51EF0000A1CC1A /* camera-popup@2x.png in Resources */,
 				D33423AC190E307C005D3EE6 /* ShareSincerely-style7@2x.png in Resources */,
+				55729D3A1B5260150099CDBA /* button-layer-3@2x.png in Resources */,
+				55729D401B5260150099CDBA /* button-layer-6@2x.png in Resources */,
 				D3A13ED11909D6360060FA88 /* camera@2x.png in Resources */,
 				D3F19C5D19033C7800FD5551 /* Settings.storyboard in Resources */,
+				55729D371B5260150099CDBA /* button-layer-2.png in Resources */,
 				D3A13ED61909D6360060FA88 /* ExportOpenIn.png in Resources */,
 				A28B21A81963CB52005323D8 /* IMBrushImagePickerViewController.xib in Resources */,
 				A290032B192C5B0900749630 /* sample6_thumb@2x.jpg in Resources */,
@@ -1408,7 +1494,9 @@
 				A271D9E31B51A5C000A1CC1A /* canvas@2x.png in Resources */,
 				A290032A192C5B0900749630 /* sample5.jpg in Resources */,
 				D33423AD190E307C005D3EE6 /* ShareTumblr-style7.png in Resources */,
+				55729D471B5260150099CDBA /* ExportFilmRoll@2x.png in Resources */,
 				D3A13ED41909D6360060FA88 /* ExportMail.png in Resources */,
+				55729D331B5260150099CDBA /* app6.png in Resources */,
 				A2D1FF84197DF2EB0076AFCF /* b.json in Resources */,
 				A21528601989FE220070732D /* IMWelcomeViewController.xib in Resources */,
 				D350690418F879D10058BDA9 /* Localizable.strings in Resources */,
@@ -1417,6 +1505,7 @@
 				A271DA0D1B51F7B700A1CC1A /* camera-popup-mask@2x.png in Resources */,
 				C3B26A461970B56A001917F5 /* IMBrushPickerViewController.xib in Resources */,
 				D34E9812190C845E007465F5 /* Flat.fsh in Resources */,
+				55729D3E1B5260150099CDBA /* button-layer-5@2x.png in Resources */,
 				A271D9E81B51A5C000A1CC1A /* auto.png in Resources */,
 				D3A13ED81909D6360060FA88 /* heart.png in Resources */,
 				A205069D1938149D00D305CA /* IMFloatAttributeTableViewCell.xib in Resources */,
@@ -1427,6 +1516,7 @@
 				A271D9F51B51D5EF00A1CC1A /* in1.jpg in Resources */,
 				A2900329192C5B0900749630 /* sample5_thumb@2x.jpg in Resources */,
 				A2900328192C5B0900749630 /* sample4.jpg in Resources */,
+				55729D411B5260150099CDBA /* camera-popup.png in Resources */,
 				D33423A1190E305C005D3EE6 /* ShareFacebook-style7.png in Resources */,
 				D3A69D28190F444B0095627A /* example_1.png in Resources */,
 				A2900332192C5B0900749630 /* sample9_thumb@2x.png in Resources */,
@@ -1439,6 +1529,7 @@
 				C3C7B743194E626500DE1466 /* 9.json in Resources */,
 				A2900325192C5B0900749630 /* sample3_thumb@2x.jpg in Resources */,
 				D3A13EE21909D6360060FA88 /* skyline2.png in Resources */,
+				55729D351B5260150099CDBA /* button-layer-1.png in Resources */,
 				A2900321192C5B0900749630 /* sample1_thumb@2x.jpg in Resources */,
 				D3A13ED71909D6360060FA88 /* ExportOpenIn@2x.png in Resources */,
 				A271D9E41B51A5C000A1CC1A /* close.png in Resources */,
@@ -1450,6 +1541,7 @@
 				A2900331192C5B0900749630 /* sample9_thumb@2x.jpg in Resources */,
 				D34E9815190C845E007465F5 /* Texture.fsh in Resources */,
 				D3A13EDF1909D6360060FA88 /* ImportFilmRoll@2x.png in Resources */,
+				55729D461B5260150099CDBA /* ExportFilmRoll.png in Resources */,
 				D3A13ECF1909D6360060FA88 /* bg_texture@2x.png in Resources */,
 				A2900326192C5B0900749630 /* sample3.jpg in Resources */,
 				A2900327192C5B0900749630 /* sample4_thumb@2x.jpg in Resources */,

@@ -21,7 +21,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.preferredContentSize = CGSizeMake(509, 408);
+        self.view.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -31,6 +32,7 @@
         self.closeButton.hidden = YES;
         self.closeButton.enabled = NO;
     }
+    self.view.superview.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
